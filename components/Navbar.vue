@@ -23,32 +23,34 @@ const showDDM = () => {
         class="fixed left--100% top-12 flex-col w-full h-screen py-2 px-6 z-50 transition-left flex bg-light-900 dark:bg-primary md:( border-r-1 border-t-1 border-primary dark:border-light-900 w-30% h-full ) lg:( border-none static flex-row w-auto h-auto py-0 m-0 )"
         :class="{active: isActive}"
       >
-          <NuxtLink to="/" class="nav-item-link"> Home </NuxtLink>
-          <NuxtLink to="/about" class="nav-item-link"> About </NuxtLink>
-          <NuxtLink to="" class="nav-item-link"> Link </NuxtLink>
+          <NuxtLink to="/" class="nav-item-link"> News </NuxtLink>
+          <NuxtLink to="/downloads" class="nav-item-link"> Downloads </NuxtLink>
+          <NuxtLink to="/rankings" class="nav-item-link"> Rankings </NuxtLink>
 
         <!-- Dropdown item -->
         <div class="nav-item-link relative cursor-pointer">
           <div class="flex" @click="showDDM()">
-            <span>DropDown</span>
+            <span>Informations</span>
             <div i-fa6-solid-sort-down class="ms-1 lg:mt-0.5" />
           </div>
 
           <!-- Dropdown menu -->
           <div
-            class="transition lg:( origin-top-right absolute right-0 left--3 mt-3 w-40 rounded-md shadow-lg bg-light-900 dark:bg-primary ring-1 ring-primary dark:ring-light-900 )"
+            class="transition lg:( origin-top-right absolute right-0 left--1 mt-3 w-40 rounded-md shadow-lg bg-light-900 dark:bg-primary ring-1 ring-primary dark:ring-light-900 )"
             :class="[isDDMDown ? 'block' : 'hidden']"
           >
             <div class="py-1">
-              <NuxtLink to="" class="nav-item-link dropDown-item"> Link </NuxtLink>
-              <NuxtLink to="" class="nav-item-link dropDown-item"> Link </NuxtLink>
-              <NuxtLink to="" class="nav-item-link dropDown-item lg:!py-2"> Link </NuxtLink>
+              <NuxtLink to="/features" class="nav-item-link dropDown-item"> Features </NuxtLink>
+              <NuxtLink to="/guides" class="nav-item-link dropDown-item"> Guides </NuxtLink>
+              <NuxtLink to="/faq" class="nav-item-link dropDown-item"> FAQ </NuxtLink>
+              <NuxtLink to="/rules" class="nav-item-link dropDown-item"> Rules </NuxtLink>
             </div>
           </div>
         </div>
 
           <!-- Navigation links -->
-          <NuxtLink to="" class="nav-item-link b-none"> Link </NuxtLink>
+          <NuxtLink to="/login" class="nav-item-link"> Login </NuxtLink>
+          <NuxtLink to="/register" class="nav-item-link"> Register </NuxtLink>
       </div>
 
       <!-- Mobile button -->
