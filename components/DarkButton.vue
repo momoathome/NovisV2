@@ -9,8 +9,8 @@ const toggleDark = useToggle(isDark)
   <button
     @click="toggleDark()"
     @click.prevent="dark.change"
-    class="icon-btn bg-transparent"
-  >
-    <div dark:i-carbon-moon i-carbon-sun />
-  </button>
+    class="icon-btn"
+    dark:i-carbon-moon
+    i-carbon-sun
+  />
 </template>
