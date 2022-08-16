@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <HelloWorldTemplate />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
