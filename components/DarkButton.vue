@@ -1,8 +1,15 @@
 <script setup lang="ts">
-const dark = usePinia()
+import {useIsdark} from '~/stores/isdark'
+const dark = useIsdark()
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+
+const prefferdDark = usePreferredDark()
+
+onBeforeMount(() => {
+  prefferdDark ? toggleDark() : ''
+})
 </script>
 
 <template>

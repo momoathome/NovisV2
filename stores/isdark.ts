@@ -1,9 +1,7 @@
 import {defineStore} from 'pinia'
 
-const preffersDark = usePreferredDark()
-
 export const useIsdark = defineStore('isdark', () => {
-  const isdark = preffersDark
+  const isdark = usePreferredDark()
 
   function change() {
     isdark.value = !isdark.value
