@@ -8,6 +8,14 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+    appear: true,
+  },
+})
+</script>
 
 <style></style>

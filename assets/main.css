@@ -1,3 +1,35 @@
+:root[theme='default'] {
+  --base: 12, 15, 24;
+  --base-light: 221, 225, 227;
+  --primary: 13, 148, 136;
+  --primary-light: 74, 175, 166;
+  --primary-dark: 56, 140, 133;
+  --secondary: ;
+  --accent: ;
+}
+
+:root[theme='default'] .router-link-exact-active {
+  color: rgb(13, 148, 136);
+}
+
+:root[theme='update'] {
+  --base: 34, 40, 49;
+  --base-light: 253, 244, 255;
+  --primary: 240, 84, 84;
+  --primary-light: 242, 105, 105;
+  --primary-dark: 150, 53, 53;
+  --secondary: ;
+  --accent: ;
+}
+
+[theme='update'] .router-link-exact-active {
+  color: rgb(240, 84, 84);
+}
+
+.hero-clip {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
@@ -21,5 +53,5 @@
 }
 .layout-enter-active,
 .layout-leave-active {
-  transition: all 0.5s;
+  transition: all 1s;
 }

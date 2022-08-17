@@ -5,11 +5,11 @@
     <!-- Layer 1 -->
     <!-- change ### top-px ### to increase or decrease thickness of arrow -->
     <div
-      class="hero-clip absolute w-full h-[calc(100%+2px)] top-2px left-0 z-0 bg-base dark:bg-light-700"
+      class="hero-clip absolute w-full h-[calc(100%+2px)] top-2px left-0 z-0 bg-base dark:bg-base_light"
     />
     <!-- Layer 2 -->
     <div
-      class="hero-clip absolute w-[calc(100%)] h-[calc(100%+2px)] top-0 left-0 z-1 bg-light-900 dark:bg-base"
+      class="hero-clip absolute w-[calc(100%)] h-[calc(100%+2px)] top-0 left-0 z-1 bg-base_light dark:bg-base"
     />
 
     <!-- Heading -->
@@ -30,8 +30,4 @@
   </section>
 </template>
 
-<style lang="scss">
-.hero-clip {
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-</style>
+<style lang="scss"></style>
