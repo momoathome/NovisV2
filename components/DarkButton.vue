@@ -7,9 +7,9 @@ const toggleDark = useToggle(isDark)
 
 const prefferdDark = usePreferredDark()
 
-onBeforeMount(() => {
+/* onBeforeMount(() => {
   prefferdDark ? toggleDark() : ''
-})
+}) */
 </script>
 
 <template>

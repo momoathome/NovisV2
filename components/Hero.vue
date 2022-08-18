@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="w-full relative z-5 min-h-60vh">
+  <section class="w-full relative z-5 min-h-60vh animate-fade-in animate-duration-200">
     <!-- Layer 1 -->
     <!-- change ### top-px ### to increase or decrease thickness of arrow -->
     <div
