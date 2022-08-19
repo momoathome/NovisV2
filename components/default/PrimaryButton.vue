@@ -1,9 +1,9 @@
 <template>
   <button
     type="button"
-    class="cursor-pointer relative inline-block z-0 px-4 py-2 text-12px whitespace-nowrap md:( px-12 py-4 text-1rem ) rounded-lg shadow-xl border-none bg-transparent text-white transition-all transition-duration-300 before:( content-empty absolute z--1 inset-0 px-2px py-2px transition-all rounded-lg )"
+    class="cursor-pointer font-sans tracking-1px uppercase font-bold relative inline-block z-0 px-4 py-2 text-xs whitespace-nowrap md:( px-8 py-3 text-sm ) xl:( px-12 py-4 ) rounded-lg shadow-xl border-none bg-transparent text-white transition-all transition-duration-300 before:( content-empty absolute z--1 inset-0 px-2px py-2px transition-all rounded-lg )"
   >
-    Join us Now
+    <slot />
   </button>
 </template>
 

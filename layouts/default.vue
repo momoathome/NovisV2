@@ -1,6 +1,6 @@
 <template>
   <!-- prettier-ignore -->
-  <div class="min-h-100vh font-sans flex flex-col text-gray-400  ">
+  <div class="min-h-100vh flex flex-col text-primary_light  ">
     
     <DefaultTheHeader />
 

@@ -4,10 +4,10 @@
       <!-- Logo  -->
       <div class="text-3xl text-white font-semibold">NovisV2</div>
 
-      <DefaultNavbar />
+      <DefaultTheNavbar class="justify-self-end" />
 
       <div class="flex items-center gap-3 lg:gap-6">
-        <DefaultButtonRegister />
+        <DefaultPrimaryButton>Join us Now</DefaultPrimaryButton>
 
         <!-- Account Panel -->
         <ButtonUserPanel class="text-lg" />
