@@ -1,3 +1,15 @@
+:root[theme='novisV2'] {
+  --base: 31, 29, 51;
+  --base-light: 41, 41, 69;
+  --base-dark: 24, 23, 39;
+  --primary: 61, 209, 217;
+  /*   --primary-light: 74, 175, 166;
+  --primary-dark: 56, 140, 133; */
+  --secondary: 125, 105, 227;
+  --tertiary: 92, 157, 220;
+  --accent: 0, 179, 213;
+}
+
 :root[theme='default'] {
   --base: 12, 15, 24;
   --base-light: 221, 225, 227;
@@ -6,10 +18,6 @@
   --primary-dark: 56, 140, 133;
   --secondary: ;
   --accent: ;
-}
-
-:root[theme='default'] .router-link-exact-active {
-  color: rgb(13, 148, 136);
 }
 
 :root[theme='update'] {
@@ -22,8 +30,8 @@
   --accent: ;
 }
 
-[theme='update'] .router-link-exact-active {
-  color: rgb(240, 84, 84);
+.router-link-exact-active {
+  color: rgb(var(--primary));
 }
 
 .hero-clip {
