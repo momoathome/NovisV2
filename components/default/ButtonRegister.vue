@@ -17,7 +17,7 @@ button:hover {
 }
 
 button::before {
-  background: linear-gradient(90deg, rgba(102, 224, 229, 1) 0%, hwb(268 42% 8%) 100%);
+  background: var(--background-gradient);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -36,6 +36,6 @@ button::after {
   z-index: -1;
   opacity: 0;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, rgba(102, 224, 229, 1) 0%, hwb(268 42% 8%) 100%);
+  background: var(--background-gradient);
 }
 </style>

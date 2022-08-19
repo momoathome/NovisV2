@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16 shadow-lg">
+  <header class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16">
     <div class="flex justify-between items-center w-full">
       <!-- Logo  -->
       <div class="text-3xl text-white font-semibold">NovisV2</div>
@@ -10,7 +10,7 @@
         <DefaultButtonRegister />
 
         <!-- Account Panel -->
-        <div i-teenyicons-user-circle-solid class="icon-btn text-xl"></div>
+        <ButtonUserPanel class="text-lg" />
         <!-- Discord component -->
         <DiscordButton class="text-xl" :open="isOpen" @click="modal.show()" />
         <!-- Darkmode Component - Button -->
@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import {useModal} from '~/stores/modal'
+import ButtonUserPanel from './ButtonUserPanel.vue'
 
 /* Discord Modal */
 const modal = useModal() // modal store
@@ -41,4 +42,8 @@ modal.$subscribe((mutation, state) => {
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+header {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%);
+}
+</style>

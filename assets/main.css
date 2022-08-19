@@ -8,6 +8,11 @@
   --secondary: 125, 105, 227;
   --tertiary: 92, 157, 220;
   --accent: 0, 179, 213;
+  --background-gradient: linear-gradient(
+    90deg,
+    rgba(102, 224, 229, 1) 0%,
+    hwb(268 42% 8%) 100%
+  );
 }
 
 :root[theme='default'] {

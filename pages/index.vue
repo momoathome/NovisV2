@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <Hero /> -->
-    <img src="/img/gaming-website-template.jpg" alt="" width="1920" height="700" />
+    <img src="/img/hero.webp" alt="" width="1920" height="800" />
     <main class="bg-base text-center">
       <button @click="changeComp()">my Button</button>
       <component :is="asyncComponent" />
