@@ -9,6 +9,7 @@ const mode = useColorMode({
   attribute: 'theme',
   modes: {
     // custom colors
+    novisV2: 'novisV2',
     update: 'update',
     default: 'default',
   },
@@ -20,5 +21,5 @@ const switchTheme = () => {
   } else mode.value = 'update'
 }
 
-mode.value = 'default'
+mode.value = 'novisV2'
 </script>

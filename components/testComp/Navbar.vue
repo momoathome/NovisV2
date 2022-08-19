@@ -34,7 +34,7 @@ onClickOutside(target, (e) => (isDDMDown.value = false))
 
         <!-- Dropdown menu -->
         <div
-          class="transition lg:( origin-top-right absolute right-0 left--1 mt-3 w-40 rounded-md shadow-lg bg-base_light dark:bg-base ring-1 ring-base dark:ring-base_light )"
+          class="transition lg:( origin-top-right absolute right-0 left--1 mt-3 w-40 z-20 rounded-md shadow-lg bg-base_light dark:bg-base ring-1 ring-base dark:ring-base_light )"
           :class="[isDDMDown ? 'block' : 'hidden']"
           @click="showDDM"
           ref="target"
