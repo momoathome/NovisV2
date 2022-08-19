@@ -1,15 +1,26 @@
 <template>
   <!-- prettier-ignore -->
-  <div class="min-h-100vh  font-sans flex flex-col text-dark-800 bg-base_light dark:( text-light-700 bg-base )">
+  <div class="min-h-100vh font-sans flex flex-col text-gray-400  ">
     
-    <TheHeader />
+    <DefaultTheHeader />
 
     <div class="flex-grow">
       <slot />
     </div>
 
-    <TheFooter />
+    <!-- <TheFooter /> -->
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const mode = useColorMode({
+  attribute: 'theme',
+  modes: {
+    // custom colors
+    novisV2: 'novisV2',
+    update: 'update',
+    default: 'default',
+  },
+})
+mode.value = 'novisV2'
+</script>
