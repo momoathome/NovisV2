@@ -13,9 +13,9 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 text-xl text-white hover:text-primary lg:( text-lg px-8 )'],
-    ['dropDown-item', 'nav-item-link block w-30% md:w-75% lg:( w-full !px-4 !py-1 hover:bg-light-700/60 )'],
-    ['icon-btn', 'cursor-pointer text-white p-0 m-0 opacity-75 transition transition-duration-200 hover:( opacity-100 text-primary ) !outline-none !border-none'],
+    ['nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 text-sm font-sans font-bold uppercase text-white hover:text-primary lg:( px-8 )'],
+    ['dropDown-item', 'nav-item-link block w-30% md:w-75% lg:( w-full !px-6 !py-2 hover:bg-primary_light/50 )'],
+    ['icon-btn', 'cursor-pointer text-primary_light p-0 m-0 opacity-80 transition transition-duration-200 hover:( opacity-100 text-primary ) !border-none'],
     ['bar', 'block w-25px h-3px my-5px mx-auto transition bg-primary'],
     ['counter-btn', 'px-4 py-2 font-medium text-sm tracking-wide text-white capitalize cursor-pointer transition-colors transform bg-primary rounded-md border-none hover:bg-primary_light focus:( outline-none ring ring-base dark:ring-base_light ring-opacity-80 )'],
 ],
@@ -30,11 +30,15 @@ export default defineConfig({
       }
     }),
     presetWebFonts({
-      provider: 'google', // default provider
+      provider: 'none', // default provider
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: [
+          {
+            name: 'Roboto',
+            italic: false,
+            provider: 'none',
+          },
+        ],
       },
     }),
   ],
@@ -42,6 +46,8 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   preflights: [],
+
+
 
   rules: [
     [/^text-(.*)$/, ([, c], { theme }) => {

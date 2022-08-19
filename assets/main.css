@@ -1,10 +1,28 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~/assets/fonts/agency_fb.ttf') format('truetype');
+}
+
+/* @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~/assets/fonts/Robot-Regular.ttf') format('truetype');
+} */
+
 :root[theme='novisV2'] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   --base: 31, 29, 51;
   --base-light: 41, 41, 69;
   --base-dark: 24, 23, 39;
-  --primary: 61, 209, 217;
-  /*   --primary-light: 74, 175, 166;
-  --primary-dark: 56, 140, 133; */
+  --primary: 61, 208, 216;
+  --primary-light: 194, 212, 248;
+  /* --primary-dark: 56, 140, 133;  */
   --secondary: 125, 105, 227;
   --tertiary: 92, 157, 220;
   --accent: 0, 179, 213;
@@ -66,5 +84,5 @@
 }
 .layout-enter-active,
 .layout-leave-active {
-  transition: all 1s;
+  transition: all 0.5s;
 }
