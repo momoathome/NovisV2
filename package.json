@@ -18,9 +18,9 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.95",
+    "@iconify/json": "^2.1.96",
     "@pinia/nuxt": "^0.4.1",
-    "@unocss/nuxt": "^0.45.8",
+    "@unocss/nuxt": "^0.45.9",
     "@vueuse/components": "^9.1.0",
     "@vueuse/core": "^9.1.0",
     "@vueuse/nuxt": "^9.1.0",
