@@ -1,1 +1,0 @@
-import{a as e,o as t,b as s,e as c}from"./entry.2d6b108f.mjs";const n={},o={class:"mt-200px"},a=c("h1",{class:"text-3xl text-center"},"Rankings",-1),r=[a];function _(i,d){return t(),s("div",o,r)}const x=e(n,[["render",_]]);export{x as default};
