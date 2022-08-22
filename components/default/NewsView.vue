@@ -26,8 +26,9 @@
         </h2>
         <div
           class="max-w-65ch children:( text-sm m-0 leading-6 font-sans mt-4 ) first: ( mt-8 )"
-          v-html="newsObject.content"
-        ></div>
+        >
+          <p>{{ newsObject.content }}</p>
+        </div>
 
         <DefaultPrimaryButton class="mt-16"> Read More </DefaultPrimaryButton>
       </div>
