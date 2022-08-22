@@ -1,0 +1,1 @@
+import{a as e,o as t,b as c,e as s}from"./entry.2d6b108f.mjs";const o={},a=s("h1",{class:"text-3xl text-center"},"FAQ",-1),n=[a];function r(_,l){return t(),c("div",null,n)}const f=e(o,[["render",r]]);export{f as default};

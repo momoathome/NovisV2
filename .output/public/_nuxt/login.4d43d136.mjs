@@ -1,0 +1,1 @@
+import{a as e,o as t,b as o,e as c}from"./entry.2d6b108f.mjs";const s={},n=c("h1",{class:"text-3xl text-center"},"Login",-1),a=[n];function r(_,l){return t(),o("div",null,a)}const d=e(s,[["render",r]]);export{d as default};
