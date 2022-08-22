@@ -75,6 +75,7 @@ const newsItems = [
   },
   {
     title: 'Patchlog #2',
+    short_title: 'Patchlog #2',
     date: '26. Mar 2022',
     img: 'News2',
     tags: ['Patchlog'],
@@ -90,6 +91,7 @@ const newsItems = [
   },
   {
     title: 'Maintenance 25. Mar 2022',
+    short_title: 'Maintenance #1',
     date: '20. Mar 2022',
     img: 'News3',
     tags: ['Maintenance'],
@@ -105,6 +107,7 @@ const newsItems = [
   },
   {
     title: 'Patchlog #1',
+    short_title: 'Patchlog #1',
     date: '15. Mar 2022',
     img: 'News4',
     tags: ['Patchlog'],

@@ -4,7 +4,7 @@
       <!-- Logo  -->
       <div class="text-3xl text-white font-semibold">NovisV2</div>
 
-      <DefaultTheNavbar class="justify-self-end" />
+      <DefaultTheNavbar />
 
       <div class="flex items-center gap-3 lg:gap-6">
         <DefaultPrimaryButton>Join us Now</DefaultPrimaryButton>
