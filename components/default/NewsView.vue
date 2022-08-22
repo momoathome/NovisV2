@@ -22,14 +22,10 @@
           </div>
         </div>
         <h2 class="text-white m-0 uppercase text-3xl">{{ newsObject.title }}</h2>
-        <div class="max-w-65ch">
-          <p class="text-sm m-0 mt-8 leading-6 font-sans">
-            {{ newsObject.content }}
-          </p>
-          <p class="text-sm m-0 mt-4 leading-6 font-sans">
-            {{ newsObject.content }}
-          </p>
-        </div>
+        <div
+          class="max-w-65ch children:( text-sm m-0 leading-6 font-sans mt-4 ) first: ( mt-8 )"
+          v-html="newsObject.content"
+        ></div>
 
         <DefaultPrimaryButton class="mt-16"> Read More </DefaultPrimaryButton>
       </div>

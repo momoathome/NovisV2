@@ -5,6 +5,10 @@
     <main class="bg-base flex flex-col justify-center pt-8rem">
       <DefaultNews />
 
+      <div class="mt-200px">
+        <DefaultTest />
+      </div>
+
       <!-- <div class="flex justify-center">
         <DefaultNewsCarousel
           :navigation="true"
@@ -32,6 +36,7 @@
 </template>
 
 <script setup>
+import Test from '~~/components/default/test.vue'
 const carouselSlides = ['bg-1', 'bg-2', 'bg-3'] // Carousel
 
 const template = ref('default')

@@ -1,12 +1,12 @@
 <template>
   <div class="relative h-67% w-full">
-    <slot :currentSlide="slide" />
+    <slot :currentSlide="currentSlide" />
   </div>
 </template>
 
 <script setup lang="ts">
 const props = defineProps({
-  slide: Number,
+  currentSlide: Number,
 })
 </script>
 

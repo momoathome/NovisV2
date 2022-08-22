@@ -3,6 +3,13 @@ import Unocss from 'unocss/vite'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    apiToken: '', // can be overridden by NUXT_API_SECRET environment variable
+    public: {
+      baseUrl: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+    }
+  },
+  
   // app
   app: {
     head: {

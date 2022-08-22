@@ -5,6 +5,7 @@
       :key="index"
       :newsItem="item"
       @click="$emit('changeSlide', index)"
+      :class="{active: index + 1 === currentSlide}"
     />
   </div>
 </template>
@@ -12,6 +13,7 @@
 <script setup lang="ts">
 const props = defineProps({
   news: Array,
+  currentSlide: Number,
 })
 </script>
 
