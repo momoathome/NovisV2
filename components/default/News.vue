@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-const currentSlide = ref(1)
+const currentSlide = ref(2)
 const goToSlide = (index) => {
   currentSlide.value = index + 1
 }
