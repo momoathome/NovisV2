@@ -3,7 +3,7 @@
     <h1 class="text-5xl text-center m-0 text-white uppercase">News</h1>
 
     <div class="flex flex-col h-100vh">
-      <DefaultNewsPreviewSlider :news="newsItems" />
+      <DefaultNewsPreviewSlider :news="newsItems" @change-slide="goToSlide" />
 
       <DefaultNewsViewSlider :slide="currentSlide" v-slot="{currentSlide}">
         <DefaultNewsCarouselSlide v-for="(slide, index) in newsItems" :key="index">
