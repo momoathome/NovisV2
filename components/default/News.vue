@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-const currentSlide = ref(2)
+const currentSlide = ref(3)
 const newsItems = [
   {
     title: 'Sommer Event 2022 (Deutsch)',
