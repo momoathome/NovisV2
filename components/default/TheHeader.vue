@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16">
+  <header class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16 z-20">
     <div class="flex justify-between items-center w-full">
       <!-- Logo  -->
       <div class="text-3xl text-white font-semibold">NovisV2</div>

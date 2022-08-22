@@ -18,15 +18,15 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.93",
-    "@pinia/nuxt": "^0.4.0",
-    "@unocss/nuxt": "^0.45.7",
-    "@vueuse/core": "^9.1.0",
+    "@iconify/json": "^2.1.95",
+    "@pinia/nuxt": "^0.4.1",
+    "@unocss/nuxt": "^0.45.8",
     "@vueuse/components": "^9.1.0",
+    "@vueuse/core": "^9.1.0",
     "@vueuse/nuxt": "^9.1.0",
     "nuxt": "3.0.0-rc.8",
     "push-dir": "^0.4.1",
-    "sass": "^1.54.4",
+    "sass": "^1.54.5",
     "sass-loader": "13.0.2"
   }
 }

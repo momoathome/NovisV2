@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center text-center">
+  <div
+    class="flex flex-col justify-center text-center p-4 transition transition-duration-500 cursor-pointer hover:( scale-110 )"
+  >
     <img
       :src="`/img/${newsItem.img}.webp`"
       class="rounded-full w-min self-center img-shadow"
