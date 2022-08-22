@@ -4,12 +4,20 @@
 
     <div class="flex flex-col h-100vh">
       <DefaultNewsPreviewSlider :news="newsItems" />
-      <DefaultNewsViewSlider :news="newsItems" />
+
+      <DefaultNewsViewSlider :slide="currentSlide" v-slot="{currentSlide}">
+        <DefaultNewsCarouselSlide v-for="(slide, index) in newsItems" :key="index">
+          <div v-show="currentSlide === index + 1">
+            <DefaultNewsView :newsObject="slide" />
+          </div>
+        </DefaultNewsCarouselSlide>
+      </DefaultNewsViewSlider>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+const currentSlide = ref(2)
 const newsItems = [
   {
     title: 'Sommer Event 2022 (Deutsch)',

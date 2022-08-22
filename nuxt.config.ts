@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
 
   modules: ['@vueuse/nuxt', '@pinia/nuxt', '@unocss/nuxt'],
-  css: ['~/assets/normalize.css', 'uno.css', '~/assets/main.css', ],
+  css: ['~/assets/normalize.css', '~/assets/main.css', ],
 
    // https://v3.nuxtjs.org/api/configuration/nuxt.config#vite
    vite: {
