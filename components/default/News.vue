@@ -7,12 +7,14 @@
         :news="newsItems"
         :currentSlide="currentSlide"
         @change-slide="goToSlide"
+        @prev-slide="prevSlide"
+        @next-slide="nextSlide"
       />
 
       <DefaultNewsViewSlider :currentSlide="currentSlide" v-slot="{currentSlide}">
         <DefaultNewsCarouselSlide v-for="(slide, index) in newsItems" :key="index">
           <div v-show="currentSlide === index + 1">
-            <DefaultNewsView :newsObject="slide" />
+            <DefaultNewsView :newsObject="slide" ref="target" />
           </div>
         </DefaultNewsCarouselSlide>
       </DefaultNewsViewSlider>
@@ -21,14 +23,43 @@
 </template>
 
 <script setup lang="ts">
+const target = ref(null)
 const currentSlide = ref(1)
+const slideCount = ref(null)
+
+// next slide
+const nextSlide = () => {
+  if (currentSlide.value === slideCount.value) {
+    currentSlide.value = 1
+    return
+  }
+  currentSlide.value += 1
+}
+// prev slide
+const prevSlide = () => {
+  if (currentSlide.value === 1) {
+    currentSlide.value = 1
+    return
+  }
+  currentSlide.value -= 1
+}
+// goTo slide
 const goToSlide = (index) => {
   currentSlide.value = index + 1
 }
 
+const getSlideCount = () => {
+  slideCount.value = unrefElement(target).length
+}
+
+onMounted(() => {
+  getSlideCount()
+})
+
 const newsItems = [
   {
-    title: 'Sommer Event 2022 (Deutsch)',
+    title: 'Sommer Event 2022 (Deutsch) Springbreak',
+    short_title: 'Sommer Event 2022 (Deutsch)',
     date: '28. Mar 2022',
     img: 'News1',
     tags: ['Event', 'Patchlog'],

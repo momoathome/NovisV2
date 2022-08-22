@@ -1,6 +1,6 @@
 <template>
   <div
-    class="newsItemContainer flex flex-col justify-center text-center p-4 transition transition-duration-350 cursor-pointer"
+    class="newsItemContainer flex flex-col justify-center text-center transition transition-duration-350 cursor-pointer"
   >
     <img
       :src="`/img/${newsItem.img}.webp`"
@@ -10,7 +10,7 @@
     <h3
       class="text-white text-2xl mt-6 mb-0 uppercase transition transition-duration-350"
     >
-      {{ newsItem.title }}
+      {{ newsItem.short_title }}
     </h3>
     <p class="m-0 text-sm font-bold uppercase font-sans">{{ newsItem.date }}</p>
   </div>

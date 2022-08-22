@@ -6,7 +6,7 @@
       <DefaultNews />
 
       <div class="mt-200px">
-        <DefaultTest />
+        <DefaultTester />
       </div>
 
       <!-- <div class="flex justify-center">
@@ -36,9 +36,6 @@
 </template>
 
 <script setup>
-import Test from '~~/components/default/test.vue'
-const carouselSlides = ['bg-1', 'bg-2', 'bg-3'] // Carousel
-
 const template = ref('default')
 const asyncComponent = shallowRef(null)
 

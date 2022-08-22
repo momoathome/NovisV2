@@ -21,7 +21,9 @@
             </p>
           </div>
         </div>
-        <h2 class="text-white m-0 uppercase text-3xl">{{ newsObject.title }}</h2>
+        <h2 class="text-white m-0 uppercase text-3xl max-w-34ch">
+          {{ newsObject.title }}
+        </h2>
         <div
           class="max-w-65ch children:( text-sm m-0 leading-6 font-sans mt-4 ) first: ( mt-8 )"
           v-html="newsObject.content"
