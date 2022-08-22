@@ -17,7 +17,11 @@
 </template>
 
 <script setup lang="ts">
-const currentSlide = ref(3)
+const currentSlide = ref(1)
+const goToSlide = (index) => {
+  currentSlide.value = index + 1
+}
+
 const newsItems = [
   {
     title: 'Sommer Event 2022 (Deutsch)',
