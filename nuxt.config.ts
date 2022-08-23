@@ -4,9 +4,9 @@ import Unocss from 'unocss/vite'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   runtimeConfig: {
-    apiSecret: '', // can be overridden by NUXT_API_SECRET environment variable
+    apiSecret: 'noMuciBcibFRCQDOfiiSdMb4tGQBVxELAzrP7hRBw5a9FSj6HI2rJdK9pADZKdRm', // can be overridden by NUXT_API_SECRET environment variable
     public: {
-      apiBase: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+      apiBase: 'https://api.novis-cms.com/v1', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
     }
   },
   
