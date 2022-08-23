@@ -1,22 +1,14 @@
 <template>
-  <div class="relative w-full h-33% m-block-10 px-8">
-    <div class="newsSliderNavigation left-0">
-      <div
-        @click="$emit('prevSlide')"
-        i-fa6-solid-angle-left
-        class="bg-primary w-full h-full"
-      />
+  <div class="relative w-full h-33% m-block-10 px-8 overflow-hidden">
+    <div class="newsSliderNavigation left-0 prev-btn" @click="$emit('prevSlide')">
+      <div i-fa6-solid-angle-left class="bg-primary w-full h-full" />
     </div>
 
-    <div class="newsSliderNavigation right-0">
-      <div
-        @click="$emit('nextSlide')"
-        i-fa6-solid-angle-right
-        class="bg-primary w-full h-full"
-      />
+    <div class="newsSliderNavigation right-0 next-btn" @click="$emit('nextSlide')">
+      <div i-fa6-solid-angle-right class="bg-primary w-full h-full" />
     </div>
 
-    <div class="grid grid-cols-4 justify-around w-full h-full">
+    <div class="flex px-4 gap-4 overflow-x-auto newsItemWrapper">
       <DefaultNewsItem
         v-for="(item, index) in news"
         :key="index"
@@ -36,4 +28,8 @@ const props = defineProps({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.newsItemWrapper::-webkit-scrollbar {
+  display: none;
+}
+</style>
