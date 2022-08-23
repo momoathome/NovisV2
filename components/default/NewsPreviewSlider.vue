@@ -8,7 +8,7 @@
       <div i-fa6-solid-angle-right class="bg-primary w-full h-full" />
     </div>
 
-    <div class="flex px-4 gap-4 overflow-x-auto newsItemWrapper">
+    <div class="flex px-4 overflow-x-auto newsItemWrapper">
       <DefaultNewsItem
         v-for="(item, index) in news"
         :key="index"

@@ -1,7 +1,5 @@
 <template>
-  <div class="mt-200px">
-    <h1 class="text-3xl text-center">Downloads</h1>
+  <div class="h-100vh w-full flex justify-center">
+    <DefaultTheLoader />
   </div>
 </template>
-
-<script setup></script>

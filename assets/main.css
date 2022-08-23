@@ -53,8 +53,12 @@
   --accent: ;
 }
 
-.router-link-exact-active {
-  color: rgb(var(--primary));
+body {
+  background-color: rgb(var(--base));
+}
+
+.router-link-active {
+  color: rgb(var(--primary)) !important;
 }
 
 .hero-clip {

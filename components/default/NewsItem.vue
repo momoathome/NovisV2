@@ -1,6 +1,6 @@
 <template>
   <div
-    class="newsItemContainer flex flex-none flex-col justify-center text-center transition transition-duration-350 cursor-pointer"
+    class="newsItemContainer w-261px flex flex-none flex-col justify-center text-center transition transition-duration-350 cursor-pointer"
   >
     <img
       :src="`/img/${newsItem.img}.webp`"
