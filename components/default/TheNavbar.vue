@@ -2,34 +2,39 @@
 /* Mobile Menu */
 const isActive = ref(false)
 const showMenu = () => {
-  isActive.value = !isActive.value
+  if (isActive.value) {
+    isActive.value = false
+  } else isActive.value = !isActive.value
 }
 
 /* Dropdown Menu */
 const isDDMDown = ref(false)
 const target = ref()
 const showDDM = () => {
-  isDDMDown.value = !isDDMDown.value
+  if (isDDMDown.value) {
+    isDDMDown.value = false
+  } else isDDMDown.value = !isDDMDown.value
 }
 onClickOutside(target, (e) => {
-  if (isDDMDown.value === true) {
+  if (isDDMDown.value) {
     isDDMDown.value = false
-  } else return
+  }
 })
 </script>
 
 <template>
   <div class="flex-grow-2">
     <nav
-      class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row float-right me-10% w-auto h-auto p-block-0 ) xl:me-17%"
+      class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row float-right me-3% w-auto h-auto p-block-0 ) xl:me-17%"
       :class="[isActive ? 'left-0' : '']"
     >
       <!-- Navigation Links -->
-      <NuxtLink to="/" class="nav-item-link"> News </NuxtLink>
-      <NuxtLink to="/downloads" class="nav-item-link"> Downloads </NuxtLink>
-      <NuxtLink to="/rankings" class="nav-item-link"> Rankings </NuxtLink>
+      <NuxtLink to="/" @click="showMenu" class="nav-item-link"> News </NuxtLink>
+      <!-- prettier-ignore -->
+      <NuxtLink to="/downloads" @click="showMenu" class="nav-item-link">Downloads</NuxtLink>
+      <NuxtLink to="/rankings" @click="showMenu" class="nav-item-link">Rankings</NuxtLink>
 
-      <div class="nav-item-link relative cursor-pointer" @click="showDDM()">
+      <div class="nav-item-link relative cursor-pointer" @click="showDDM()" ref="target">
         <!-- Nav Item to trigger Dropdown Menu -->
         <div class="flex">
           <span>Informations</span>
@@ -45,20 +50,20 @@ onClickOutside(target, (e) => {
           class="transition transition-duration-300 lg:( origin-top-right absolute top-74px right-16px w-40 bg-base/85 z-20 rounded-b-md shadow-md )"
           :class="[isDDMDown ? 'opacity-100 ' : 'opacity-0']"
           @click="showDDM"
-          ref="target"
         >
+          <!-- prettier-ignore -->
           <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
-            <NuxtLink to="/features" class="dropDown-item"> Features </NuxtLink>
-            <NuxtLink to="/guides" class="dropDown-item"> Guides </NuxtLink>
-            <NuxtLink to="/faq" class="dropDown-item"> FAQ </NuxtLink>
-            <NuxtLink to="/rules" class="dropDown-item"> Rules </NuxtLink>
+            <NuxtLink to="/features" @click="showMenu" class="dropDown-item"> Features </NuxtLink>
+            <NuxtLink to="/guides" @click="showMenu" class="dropDown-item"> Guides </NuxtLink>
+            <NuxtLink to="/faq" @click="showMenu" class="dropDown-item"> FAQ </NuxtLink>
+            <NuxtLink to="/rules" @click="showMenu" class="dropDown-item"> Rules </NuxtLink>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Mobile button -->
-    <div class="mobil-button block lg:hidden px-3 cursor-pointer" @click="showMenu()">
+    <div class="block float-right me-8 lg:hidden px-3 cursor-pointer" @click="showMenu()">
       <span class="bar" :class="[isActive ? 'translate-y-8px rotate-45' : '']"></span>
       <span class="bar" :class="[isActive ? 'opacity-0' : '']"></span>
       <span class="bar" :class="[isActive ? 'translate-y--8px rotate--45' : '']"></span>
