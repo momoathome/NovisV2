@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const {data: newsItems, pending}: any = await useLazyFetch(() => `/api/news`)
+const {data: newsItems, pending}: any = await useFetch(() => `/api/news`)
 const currentSlide = ref(1)
 const slideCount = ref(null)
 const target = ref(null)

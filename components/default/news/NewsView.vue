@@ -30,7 +30,7 @@
           <p>{{ newsObject.content }}</p>
         </div>
 
-        <DefaultPrimaryButton class="mt-16" :to="`/news/100`">
+        <DefaultPrimaryButton class="mt-16" :to="`/news/${newsObject.news_id}`">
           Read More
         </DefaultPrimaryButton>
       </div>

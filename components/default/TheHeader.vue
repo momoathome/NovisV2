@@ -10,7 +10,7 @@
         <DefaultPrimaryButton>Join us Now</DefaultPrimaryButton>
 
         <!-- Account Panel -->
-        <ButtonUserPanel class="text-lg" />
+        <UserPanelButton class="text-lg" />
         <!-- Discord component -->
         <DiscordButton class="text-xl" :open="isOpen" @click="modal.show()" />
         <!-- Darkmode Component - Button -->
@@ -24,7 +24,6 @@
 
 <script setup lang="ts">
 import {useModal} from '~/stores/modal'
-import ButtonUserPanel from './ButtonUserPanel.vue'
 
 /* Discord Modal */
 const modal = useModal() // modal store
