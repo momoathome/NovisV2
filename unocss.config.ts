@@ -13,8 +13,8 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 text-sm font-sans font-bold uppercase text-white hover:text-primary lg:( px-8 )'],
-    ['dropDown-item', 'nav-item-link block w-30% md:w-75% lg:( w-full !px-6 !py-2 hover:bg-primary_light/50 )'],
+    ['nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 w-max text-sm font-sans font-bold uppercase text-white hover:text-primary lg:( px-8 )'],
+    ['dropDown-item', 'nav-item-link block w-100% lg:( w-full !px-6 !py-2 hover:bg-primary_light/50 )'],
     ['icon-btn', 'cursor-pointer text-primary_light p-0 m-0 opacity-80 transition transition-duration-200 hover:( opacity-100 text-primary ) !border-none'],
     ['bar', 'block w-25px h-3px my-5px mx-auto transition bg-primary'],
     ['newsSliderNavigation', 'cursor-pointer z-2 absolute top-50% translate-y--50% rounded-full w-40px h-40px p-2 hover:( bg-light-50/10 )'],
