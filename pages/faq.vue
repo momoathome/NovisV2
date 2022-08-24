@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1 class="text-3xl text-center">FAQ</h1>
+  <div class="h-100vh w-full flex justify-center">
+    <DefaultFAQ />
   </div>
 </template>
