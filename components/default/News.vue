@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const {data: newsItems, pending}: any = await useFetch(() => `/api/news`)
+const {data: newsItems, pending}: any = await useLazyFetch(() => `/api/news`)
 const currentSlide = ref(1)
 const slideCount = ref(null)
 const target = ref(null)
@@ -32,20 +32,14 @@ const getSlideCount = () => {
 onMounted(() => {
   getSlideCount()
 })
-
-pending.value = false
 </script>
 
 <template>
-  <div
-    v-if="pending"
-    class="absolute top-0 left-0 z-100 h-full w-full flex justify-center"
-  >
-    <DefaultTheLoader />
-  </div>
-
-  <div v-else class="w-full h-full overflow-x-hidden">
-    <div class="container w-1140px m-auto pb-100px">
+  <div class="w-full h-full overflow-x-hidden">
+    <div v-if="pending" class="w-full h-40vh z-100 flex justify-center">
+      <DefaultTheLoader />
+    </div>
+    <div v-else class="container w-1140px m-auto pb-100px">
       <h1 class="text-5xl text-center m-0 text-white uppercase">News</h1>
 
       <div class="flex flex-col h-100vh">

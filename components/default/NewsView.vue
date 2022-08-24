@@ -30,7 +30,9 @@
           <p>{{ newsObject.content }}</p>
         </div>
 
-        <DefaultPrimaryButton class="mt-16"> Read More </DefaultPrimaryButton>
+        <DefaultPrimaryButton class="mt-16" :to="`/news/100`">
+          Read More
+        </DefaultPrimaryButton>
       </div>
       <div class="absolute top-50% right--15 translate-y--50% z-10">
         <img
