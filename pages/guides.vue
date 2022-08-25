@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1 class="text-3xl text-center">Guides</h1>
+  <div class="h-100vh w-full flex justify-center">
+    <DefaultGuides />
   </div>
 </template>

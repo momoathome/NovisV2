@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1 class="text-3xl text-center">Rules</h1>
+  <div class="h-100vh w-full flex justify-center">
+    <DefaultRules />
   </div>
 </template>
