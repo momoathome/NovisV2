@@ -1,8 +1,5 @@
-export default defineEventHandler( async (event) => {
-  const config = useRuntimeConfig()
+import getApiData from "~~/composables/getApiData"
 
-  const data = await $fetch(`${config.public.apiBase}/news`, {
-    headers: {TOKEN: config.apiSecret},
-  }) 
-  return data
+export default defineEventHandler((event) => {
+    return getApiData('news')
 })
