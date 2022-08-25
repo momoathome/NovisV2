@@ -1,12 +1,6 @@
 # Nuxt 3 Snowowl Starter Template
 
-<a href="https://github.com/momoathome/NuxtTemplate"><img
-  src="public/owl-vector-light.svg" alt="Snowowl Logo"
-  width="80" align="right"></a>
-  
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-<br>
 
 ## Features
 
@@ -51,7 +45,7 @@ pnpm install --shamefully-hoist
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on <http://localhost:3000>
 
 ```bash
 npm run dev -o
@@ -72,3 +66,11 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+## Git Commit Style
+
+* **feature** (feat): New functionality on the app
+* **bugfix** (fix): Resolve undesired behavior in your app
+* **refactor**: No new feature, just optimizations on how the code is written / organized
+* **config**: These are app changes that impact dev workflow and not end-user behavior
+* **misc**: These are random tasks that have no real impact on the code base
