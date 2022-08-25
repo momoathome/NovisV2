@@ -7,7 +7,7 @@
 
     <div class="container m-auto max-w-1140px p-block-20 px-8 lg:px-0">
       <div class="test grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12">
-        <DefaultDownloadCard
+        <DefaultDownloadsCard
           v-for="item in downloadItems"
           :key="item.title"
           :data="item"

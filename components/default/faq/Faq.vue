@@ -5,8 +5,8 @@
       <p class="m-0">Here you can find all the frequently asked Questions</p>
     </div>
 
-    <div class="container max-w-768px m-auto p-block-20">
-      <Accordion />
+    <div class="container max-w-768px m-auto p-block-20 px-8 lg:px-0">
+      <DefaultFaqAccordion />
     </div>
   </div>
 </template>

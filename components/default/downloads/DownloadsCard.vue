@@ -11,7 +11,9 @@
       <p class="font-sans text-sm leading-6 m-auto max-w-35ch">
         {{ data.content }}
       </p>
-      <DefaultPrimaryButton class="mt-4" :to="data.link">Download</DefaultPrimaryButton>
+      <DefaultPrimaryButton class="mt-4" :to="data.link" :target="'_blank'"
+        >Download</DefaultPrimaryButton
+      >
     </div>
   </div>
 </template>

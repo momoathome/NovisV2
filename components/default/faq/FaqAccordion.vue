@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2.5">
-    <DefaultAccordionItem v-for="(item, index) in 3" :key="index" />
+    <DefaultFaqAccordionItem v-for="(item, index) in 3" :key="index" />
   </div>
 </template>
 

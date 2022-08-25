@@ -1,6 +1,7 @@
 <template>
   <NuxtLink
     :to="to"
+    :target="target"
     class="btn cursor-pointer no-underline font-sans tracking-1px uppercase font-bold relative inline-block z-0 px-4 py-2 text-xs whitespace-nowrap md:( px-8 py-3 text-sm ) xl:( px-12 py-4 ) rounded-lg shadow-xl border-none bg-transparent text-white transition-all transition-duration-300 before:( content-empty absolute z--1 inset-0 px-2px py-2px transition-all rounded-lg )"
   >
     <slot />
@@ -10,6 +11,9 @@
 <script setup lang="ts">
 defineProps({
   to: {
+    type: String,
+  },
+  target: {
     type: String,
   },
 })

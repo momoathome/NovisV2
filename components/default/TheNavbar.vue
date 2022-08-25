@@ -25,7 +25,7 @@ onClickOutside(target, (e) => {
 <template>
   <div class="flex-grow-2">
     <nav
-      class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row float-right me-3% w-auto h-auto p-block-0 ) xl:me-17%"
+      class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-center me-3% w-full h-auto p-block-0 )"
       :class="[isActive ? 'left-0' : '']"
     >
       <!-- Navigation Links -->
@@ -53,17 +53,17 @@ onClickOutside(target, (e) => {
         >
           <!-- prettier-ignore -->
           <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
-            <NuxtLink to="/features" @click="showMenu" class="dropDown-item"> Features </NuxtLink>
-            <NuxtLink to="/guides" @click="showMenu" class="dropDown-item"> Guides </NuxtLink>
-            <NuxtLink to="/faq" @click="showMenu" class="dropDown-item"> FAQ </NuxtLink>
-            <NuxtLink to="/rules" @click="showMenu" class="dropDown-item"> Rules </NuxtLink>
+            <NuxtLink to="/features" @click="showMenu(); showDDM()" class="dropDown-item"> Features </NuxtLink>
+            <NuxtLink to="/guides" @click="showMenu(); showDDM()" class="dropDown-item"> Guides </NuxtLink>
+            <NuxtLink to="/faq" @click="showMenu(); showDDM()" class="dropDown-item"> FAQ </NuxtLink>
+            <NuxtLink to="/rules" @click="showMenu(); showDDM()" class="dropDown-item"> Rules </NuxtLink>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Mobile button -->
-    <div class="block float-right me-8 lg:hidden px-3 cursor-pointer" @click="showMenu()">
+    <div class="block float-right me-8 lg:hidden p-3 cursor-pointer" @click="showMenu()">
       <span class="bar" :class="[isActive ? 'translate-y-8px rotate-45' : '']"></span>
       <span class="bar" :class="[isActive ? 'opacity-0' : '']"></span>
       <span class="bar" :class="[isActive ? 'translate-y--8px rotate--45' : '']"></span>
