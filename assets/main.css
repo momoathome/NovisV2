@@ -32,6 +32,26 @@
     hwb(268 42% 8%) 100%
   );
 }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--secondary)) rgb(var(--base));
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(var(--base));
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--secondary));
+  border-radius: 10px;
+  border: 0px none rgb(var(--secondary));
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--secondary), 60%);
+}
 
 :root[theme='default'] {
   --base: 12, 15, 24;

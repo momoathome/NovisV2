@@ -1,8 +1,8 @@
 export default defineEventHandler( async (event) => {
   const config = useRuntimeConfig()
 
-  const newsItems = await $fetch(`${config.public.apiBase}/news`, {
+  const data = await $fetch(`${config.public.apiBase}/news`, {
     headers: {TOKEN: config.apiSecret},
   }) 
-  return newsItems
+  return data
 })
