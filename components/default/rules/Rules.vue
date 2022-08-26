@@ -6,11 +6,13 @@
     </div>
 
     <div class="container max-w-768px m-auto p-block-20 px-8 lg:px-0">
-      <h1>Rules</h1>
+      <DefaultRulesItem v-for="(item, index) in rules" :key="index" :rule="item" />
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const {data: rules, pending}: any = await useFetch(() => `/api/rules`)
+</script>
 
 <style scoped></style>
