@@ -6,7 +6,11 @@
     </div>
 
     <div class="container max-w-768px m-auto p-block-20 px-8 lg:px-0">
-      <DefaultFaqAccordion />
+      <DefaultFaqAccordion :faq="faq" />
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const {data: faq, pending}: any = await useFetch(() => `/api/faq`)
+</script>

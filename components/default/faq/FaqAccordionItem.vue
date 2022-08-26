@@ -5,7 +5,7 @@
     @click="openItem"
     :class="isActive ? 'rounded-t-10px open' : 'rounded-10px'"
   >
-    Section 1
+    {{ faq.question }}
     <div class="float-right">
       <span
         class="z-0 !border-none"
@@ -18,16 +18,15 @@
   <div
     class="bg-base_dark px-4 max-h-0 mt--2 overflow-hidden transition-max-height transition-duration-200 transition-ease-out rounded-b-10px"
     ref="target"
-  >
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
+    v-html="faq.answer"
+  ></div>
 </template>
 
 <script setup lang="ts">
+defineProps({
+  faq: Object,
+})
+
 const isActive = ref(false)
 const target = ref(null)
 
