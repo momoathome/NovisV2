@@ -56,6 +56,7 @@ onClickOutside(target, (e) => {
             <NuxtLink to="/features" @click="showMenu(); showDDM()" class="dropDown-item"> Features </NuxtLink>
             <NuxtLink to="/guides" @click="showMenu(); showDDM()" class="dropDown-item"> Guides </NuxtLink>
             <NuxtLink to="/faq" @click="showMenu(); showDDM()" class="dropDown-item"> FAQ </NuxtLink>
+            <NuxtLink to="/team" @click="showMenu(); showDDM()" class="dropDown-item"> Team </NuxtLink>
             <NuxtLink to="/rules" @click="showMenu(); showDDM()" class="dropDown-item"> Rules </NuxtLink>
           </div>
         </div>
