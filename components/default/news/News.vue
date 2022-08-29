@@ -11,8 +11,6 @@
           :news="newsItems"
           :currentSlide="currentSlide"
           @change-slide="goToSlide"
-          @prev-slide="prevSlide"
-          @next-slide="nextSlide"
         />
 
         <DefaultNewsViewSlider :currentSlide="currentSlide" v-slot="{currentSlide}">
@@ -34,22 +32,6 @@ const currentSlide = ref(1)
 const slideCount = ref(null)
 const target = ref(null)
 
-// next slide
-const nextSlide = () => {
-  if (currentSlide.value === slideCount.value) {
-    currentSlide.value = 1
-    return
-  }
-  currentSlide.value += 1
-}
-// prev slide
-const prevSlide = () => {
-  if (currentSlide.value === 1) {
-    currentSlide.value = 1
-    return
-  }
-  currentSlide.value -= 1
-}
 // goTo slide
 const goToSlide = (index) => {
   currentSlide.value = index + 1
