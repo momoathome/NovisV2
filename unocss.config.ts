@@ -70,7 +70,6 @@ export default defineConfig({
       primary_dark: 'rgb(var(--primary-dark))',
       secondary: 'rgb(var(--secondary))',
       tertiary: 'rgb(var(--tertiary))',
-      accent: 'rgb(var(--accent))'
     },
   },
 

@@ -47,7 +47,7 @@ onClickOutside(target, (e) => {
 
         <!-- Dropdown menu -->
         <div
-          class="transition transition-duration-300 lg:( origin-top-right absolute top-74px right-16px w-40 bg-base/85 z-20 rounded-b-md shadow-md )"
+          class="transition transition-duration-300 lg:( origin-top-right absolute top-74px right-16px w-40 bg-base/85 z-20 rounded-b-md shadow-black/20 shadow-md )"
           :class="[isDDMDown ? 'opacity-100 ' : 'opacity-0']"
           @click="showDDM"
         >

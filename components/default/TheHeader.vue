@@ -1,5 +1,7 @@
 <template>
-  <header class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16 z-20">
+  <header
+    class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16 z-20 shadow-black/20 shadow-lg"
+  >
     <div class="flex justify-between items-center w-full">
       <!-- Logo  -->
       <div class="text-3xl text-white font-semibold">NovisV2</div>
@@ -41,8 +43,4 @@ modal.$subscribe((mutation, state) => {
 })
 </script>
 
-<style scoped>
-header {
-  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%);
-}
-</style>
+<style scoped></style>

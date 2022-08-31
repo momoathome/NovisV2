@@ -38,7 +38,7 @@
         <img
           :src="newsObject.contentImg"
           alt=""
-          class="rounded-10px shadow-lg shadow-black/20"
+          class="rounded-10px shadow-black/20 shadow-md"
         />
       </div>
     </div>
@@ -51,8 +51,4 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
-.outer-shadow {
-  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
-}
-</style>
+<style scoped></style>

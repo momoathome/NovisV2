@@ -4,7 +4,7 @@
   >
     <img
       :src="`/img/${newsItem.img}.webp`"
-      class="rounded-full w-min self-center transition transition-duration-350 border-2 border-transparent img-shadow"
+      class="rounded-full w-min self-center transition transition-duration-350 border-2 border-transparent shadow-black/15 shadow-sm"
       alt=""
     />
     <h3
@@ -38,8 +38,5 @@ const props = defineProps({
   h3 {
     color: rgb(var(--primary));
   }
-}
-.img-shadow {
-  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
 }
 </style>

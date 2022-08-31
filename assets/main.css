@@ -25,7 +25,6 @@
   /* --primary-dark: 56, 140, 133;  */
   --secondary: 161, 100, 209;
   --tertiary: 92, 157, 220;
-  --accent: 90, 158, 222;
   --background-gradient: linear-gradient(
     90deg,
     rgba(102, 224, 229, 1) 0%,
@@ -42,7 +41,6 @@
   --primary-light: 74, 175, 166;
   --primary-dark: 56, 140, 133;
   --secondary: ;
-  --accent: ;
 }
 
 :root[theme='update'] {
@@ -52,7 +50,6 @@
   --primary-light: 242, 105, 105;
   --primary-dark: 150, 53, 53;
   --secondary: ;
-  --accent: ;
 }
 
 /* Firefox */
@@ -105,7 +102,7 @@ ul li::before {
   mask-size: 100% 100%;
   -webkit-mask: var(--li-icon) no-repeat;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(var(--accent));
+  background-color: rgb(var(--tertiary));
   margin-inline-end: 1rem;
   padding-inline-end: 2ch; /* size off the arrow */
   padding-block: 1ch;

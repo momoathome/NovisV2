@@ -122,7 +122,7 @@ $size: 5rem;
     background-color: rgb(var(--tertiary));
   }
   100% {
-    background-color: rgb(var(--accent));
+    background-color: rgb(var(--primary));
   }
 }
 </style>

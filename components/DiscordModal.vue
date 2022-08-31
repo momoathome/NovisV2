@@ -4,7 +4,7 @@
       <!-- prettier-ignore -->
       <transition name="drop-in">
         <div 
-          class="shadow-lg w-max fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 antialiased" 
+          class="shadow-black/20 shadow-md w-max fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 antialiased" 
           v-show="open"
         >
           <iframe src="https://discord.com/widget?id=936744932629176392&theme=dark" width="460" height="540"></iframe>
