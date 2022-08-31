@@ -25,6 +25,7 @@
   /* --primary-dark: 56, 140, 133;  */
   --secondary: 161, 100, 209;
   --tertiary: 92, 157, 220;
+  --accent: 247, 165, 76;
   --background-gradient: linear-gradient(
     90deg,
     rgba(102, 224, 229, 1) 0%,

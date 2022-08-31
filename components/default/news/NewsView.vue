@@ -25,7 +25,7 @@
           {{ newsObject.title }}
         </h2>
         <div
-          class="max-w-65ch children:( text-sm m-0 leading-6 font-sans mt-4 ) first: ( mt-8 )"
+          class="max-w-65ch children:( text-sm m-0 leading-6 font-sans mt-4 ) first: mt-8"
         >
           <p>{{ newsObject.content }}</p>
         </div>
@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   newsObject: Object,
 })
 </script>

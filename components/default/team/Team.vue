@@ -7,10 +7,10 @@
 
     <div class="container m-auto max-w-1024px p-block-35 px-8 lg:px-0">
       <div class="grid grid-cols-[repeat(auto-fit,minmax(325px,1fr))] gap-x-12 gap-y-32">
-        <DefaultTeamMember />
-        <DefaultTeamMember />
-        <DefaultTeamMember />
-        <DefaultTeamMember />
+        <DefaultTeamMember :teamRole="'admin'" />
+        <DefaultTeamMember :teamRole="'developer'" />
+        <DefaultTeamMember :teamRole="'gamemaster'" />
+        <DefaultTeamMember :teamRole="'support'" />
       </div>
     </div>
   </div>
