@@ -21,8 +21,8 @@
     </p>
 
       <div v-if="teamRole == 'admin'" i-jam-crown-f class="absolute top--2 right-2 h-24 w-24 bg-base_light" />
-      <div v-if="teamRole == 'developer'" i-bi-tools class="absolute top-3 right-3 h-17 w-17 bg-base_light" />
-      <div v-if="teamRole == 'gamemaster'" i-eos-icons-admin-outlined class="absolute top-1 right-2 h-22 w-22 bg-base_light" />
+      <div v-if="teamRole == 'developer'" i-bi-tools class="absolute top-3 right-4 h-17 w-17 bg-base_light" />
+      <div v-if="teamRole == 'gamemaster'" i-eos-icons-admin-outlined class="absolute top-1 right-3 h-22 w-22 bg-base_light" />
       <div v-if="teamRole == 'support'" i-bx-support class="absolute top-1 right-2 h-22 w-22 bg-base_light" />
 
   </div>

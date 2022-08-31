@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base_light rounded-10px p-10">
+  <div class="bg-base_light rounded-10px p-10 shadow-black/20 shadow-md">
     <div class="flex justify-between">
       <p class="text-primary uppercase font-bold font-sans text-sm m-0">
         {{ data.host }}
