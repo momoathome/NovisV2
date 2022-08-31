@@ -5,8 +5,10 @@
       <p class="m-0">Here you can find all our Features</p>
     </div>
 
-    <div class="container max-w-768px m-auto p-block-20 px-8 lg:px-0">
-      <h1>Features</h1>
+    <div class="container max-w-1024px m-auto p-block-20 px-8 lg:px-0">
+      <div class="flex flex-col gap-20">
+        <DefaultFeaturesItem v-for="(feature, index) in 4" :key="index" :order="index" />
+      </div>
     </div>
   </div>
 </template>
