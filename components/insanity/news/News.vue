@@ -1,25 +1,25 @@
 <template>
   <div class="w-full h-full overflow-x-hidden pt-20">
     <div v-if="pending" class="w-full h-40vh z-100 flex justify-center">
-      <DefaultTheLoader />
+      <insanityTheLoader />
     </div>
     <div v-else class="container w-1140px m-auto pb-100px">
       <h1 class="text-5xl text-center m-0 text-white uppercase">News</h1>
 
       <div class="flex flex-col h-100vh">
-        <DefaultNewsPreviewSlider
+        <insanityNewsPreviewSlider
           :news="newsItems"
           :currentSlide="currentSlide"
           @change-slide="goToSlide"
         />
 
-        <DefaultNewsViewSlider :currentSlide="currentSlide" v-slot="{currentSlide}">
-          <DefaultNewsViewSlide v-for="(slide, index) in newsItems || []" :key="index">
+        <insanityNewsViewSlider :currentSlide="currentSlide" v-slot="{currentSlide}">
+          <insanityNewsViewSlide v-for="(slide, index) in newsItems || []" :key="index">
             <div v-show="currentSlide === index + 1">
-              <DefaultNewsView :newsObject="slide" ref="target" />
+              <insanityNewsView :newsObject="slide" ref="target" />
             </div>
-          </DefaultNewsViewSlide>
-        </DefaultNewsViewSlider>
+          </insanityNewsViewSlide>
+        </insanityNewsViewSlider>
       </div>
     </div>
   </div>
