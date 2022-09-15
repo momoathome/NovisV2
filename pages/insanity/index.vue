@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-red-900">Second Tester</h1>
+    <h1>Insanity</h1>
   </div>
 </template>
 

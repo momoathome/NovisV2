@@ -16,7 +16,7 @@
         <!-- Discord component -->
         <DiscordButton class="text-xl" :open="isOpen" @click="modal.show()" />
         <!-- Darkmode Component - Button -->
-        <!-- <DarkButton class="text-xl" /> -->
+        <DarkButton class="text-xl" />
       </div>
     </div>
 

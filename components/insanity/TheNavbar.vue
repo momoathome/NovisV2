@@ -29,38 +29,17 @@ onClickOutside(target, (e) => {
       :class="[isActive ? 'left-0' : '']"
     >
       <!-- Navigation Links -->
-      <NuxtLink to="/" @click="showMenu" class="nav-item-link"> News </NuxtLink>
-      <!-- prettier-ignore -->
-      <NuxtLink to="/downloads" @click="showMenu" class="nav-item-link">Downloads</NuxtLink>
-      <NuxtLink to="/rankings" @click="showMenu" class="nav-item-link">Rankings</NuxtLink>
-
-      <div class="nav-item-link relative cursor-pointer" @click="showDDM()" ref="target">
-        <!-- Nav Item to trigger Dropdown Menu -->
-        <div class="flex">
-          <span>Informations</span>
-          <div
-            i-ph-caret-down-fill
-            class="ms-1 align-middle transition-transform transition-duration-300"
-            :class="[isDDMDown ? 'rotate-180' : '']"
-          />
-        </div>
-
-        <!-- Dropdown menu -->
-        <div
-          class="transition transition-duration-300 lg:( origin-top-right absolute top-74px right-16px w-40 bg-base/85 z-20 rounded-b-md shadow-black/20 shadow-md )"
-          :class="[isDDMDown ? 'opacity-100 ' : 'opacity-0']"
-          @click="showDDM"
-        >
-          <!-- prettier-ignore -->
-          <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
-            <NuxtLink to="/features" @click="showMenu(); showDDM()" class="dropDown-item"> Features </NuxtLink>
-            <NuxtLink to="/guides" @click="showMenu(); showDDM()" class="dropDown-item"> Guides </NuxtLink>
-            <NuxtLink to="/faq" @click="showMenu(); showDDM()" class="dropDown-item"> FAQ </NuxtLink>
-            <NuxtLink to="/team" @click="showMenu(); showDDM()" class="dropDown-item"> Team </NuxtLink>
-            <NuxtLink to="/rules" @click="showMenu(); showDDM()" class="dropDown-item"> Rules </NuxtLink>
-          </div>
-        </div>
-      </div>
+      <NuxtLink to="/" @click="showMenu" class="insanity-nav-item-link"> HOME </NuxtLink>
+      <NuxtLink to="" @click="showMenu" class="insanity-nav-item-link"
+        >ITEM MALL</NuxtLink
+      >
+      <NuxtLink to="/downloads" @click="showMenu" class="insanity-nav-item-link"
+        >DOWNLAODS</NuxtLink
+      >
+      <NuxtLink to="/rankings" @click="showMenu" class="insanity-nav-item-link"
+        >RANKINGS</NuxtLink
+      >
+      <NuxtLink to="" @click="showMenu" class="insanity-nav-item-link">FORUM</NuxtLink>
     </nav>
 
     <!-- Mobile button -->
