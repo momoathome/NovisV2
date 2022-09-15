@@ -14,7 +14,7 @@
   src: url('~/assets/fonts/Robot-Regular.ttf') format('truetype');
 } */
 
-:root[theme='novisV2'] {
+:root[theme='default'] {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   --base: 31, 29, 51;
@@ -35,13 +35,17 @@
     no-repeat;
 }
 
-:root[theme='default'] {
-  --base: 12, 15, 24;
-  --base-light: 221, 225, 227;
-  --primary: 13, 148, 136;
-  --primary-light: 74, 175, 166;
-  --primary-dark: 56, 140, 133;
-  --secondary: ;
+:root[theme='insanity'] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  --base: 245, 245, 245;
+  --base-light: 60, 60, 60;
+  --base-dark: 0, 0, 0;
+  --primary: 56, 189, 248;
+  --primary-light: 156, 163, 175;
+  --secondary: 56, 237, 248;
+  --tertiary: 92, 157, 220;
+  --accent: 247, 165, 76;
 }
 
 :root[theme='update'] {

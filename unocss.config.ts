@@ -19,7 +19,12 @@ export default defineConfig({
     ['bar', 'block w-25px h-3px my-5px mx-auto transition bg-primary'],
     ['newsSliderNavigation', 'cursor-pointer z-2 absolute top-50% translate-y--50% rounded-full w-40px h-40px p-2 hover:( bg-light-50/10 )'],
     ['counter-btn', 'px-4 py-2 font-medium text-sm tracking-wide text-white capitalize cursor-pointer transition-colors transform bg-primary rounded-md border-none hover:bg-primary_light focus:( outline-none ring ring-base dark:ring-base_light ring-opacity-80 )'],
-    ['template-DropDown-Item', 'cursor-pointer border-none bg-white transition transition-duration-200 w-max text-sm text-dark-800 font-serif font-bold py-2 px-4 w-full text-left lg:hover:bg-dark-50/15 '],
+    ['template-DropDown-Item', 'no-underline cursor-pointer block bg-white transition transition-duration-200 w-max text-sm text-dark-800 font-serif font-bold py-1 px-4 w-full text-left lg:hover:bg-dark-50/15 '],
+
+
+    // insanity
+    ['insanity-nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 w-max text-xs uppercase text-base hover:text-primary lg:( px-8 )'],
+
   ],
   presets: [
     presetUno(),
