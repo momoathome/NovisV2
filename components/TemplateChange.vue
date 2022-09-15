@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed z-999 top-2 right-2 bg-white rounded-md p-3 group transition transition-duration-30 cursor-pointer"
+    class="fixed z-999 top-120px right-2 bg-white rounded-md p-3 group transition transition-duration-30 cursor-pointer"
     @click="showDDM()"
     ref="target"
   >
@@ -28,8 +28,8 @@
         <!-- prettier-ignore -->
         <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
           <p class="cursor-default text-xs font-serif font-bold py-2 px-4 text-left w-max  text-dark-800/50 m-0 lg:( hover:bg-transparent )">Select Design</p>
-          <button @click="showDDM()" class="template-DropDown-Item"> Base </button>
-          <button @click="showDDM()" class="template-DropDown-Item"> Insanity </button>
+          <NuxtLink to="/" @click="showDDM(); reload()" class="template-DropDown-Item"> Base </NuxtLink>
+          <NuxtLink to="/insanity" @click="showDDM(); reload()" class="template-DropDown-Item"> Insanity </NuxtLink>
         </div>
       </div>
     </div>
@@ -50,6 +50,12 @@ onClickOutside(target, (e) => {
     isDDMDown.value = false
   }
 })
+
+function reload() {
+  setTimeout(() => {
+    location.reload()
+  }, 20)
+}
 </script>
 
 <style scoped></style>
