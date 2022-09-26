@@ -1,15 +1,10 @@
 <template>
-  <NuxtLayout :name="layout">
+  <div>
     <DefaultTheHero />
     <DefaultNews />
-
-    <!-- v-if zu NovisV2/index -->
-    <!-- v-if zu insanity/index -->
-  </NuxtLayout>
+  </div>
 </template>
 
-<script setup>
-const layout = 'novis'
-</script>
+<script setup></script>
 
 <style></style>
