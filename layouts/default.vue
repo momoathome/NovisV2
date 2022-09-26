@@ -2,7 +2,7 @@
 
 <template>
   <div class="min-h-100vh flex flex-col text-primary_light">
-    <InsanityTheHeader />
+    <DefaultTheHeader />
     <TemplateChange />
 
     <main class="flex-grow">
@@ -14,5 +14,5 @@
 </template>
 
 <script setup>
-mode.value = 'insanity'
+mode.value = 'default'
 </script>
