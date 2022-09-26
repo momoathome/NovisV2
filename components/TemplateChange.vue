@@ -28,8 +28,8 @@
         <!-- prettier-ignore -->
         <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
           <p class="cursor-default text-xs font-serif font-bold py-2 px-4 text-left w-max  text-dark-800/50 m-0 lg:( hover:bg-transparent )">Select Design</p>
-          <NuxtLink to="/" @click="showDDM(); reload()" class="template-DropDown-Item"> Base </NuxtLink>
-          <NuxtLink to="/insanity" @click="showDDM(); reload()" class="template-DropDown-Item"> Insanity </NuxtLink>
+          <NuxtLink to="/" @click="showDDM(); reload(); layout='default'" class="template-DropDown-Item"> Base </NuxtLink>
+          <NuxtLink to="/insanity" @click="showDDM(); reload(); layout='insanity'" class="template-DropDown-Item"> Insanity </NuxtLink>
         </div>
       </div>
     </div>
@@ -38,6 +38,7 @@
 
 <script setup lang="ts">
 /* Dropdown Menu */
+const layout = ref('default')
 const isDDMDown = ref(false)
 const target = ref()
 const showDDM = () => {
@@ -54,6 +55,7 @@ onClickOutside(target, (e) => {
 function reload() {
   setTimeout(() => {
     location.reload()
+    setLocalStorage('layout', layout.value)
   }, 20)
 }
 </script>
