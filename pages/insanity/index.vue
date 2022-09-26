@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Insanity</h1>
+    <InsanityTheHero />
+    <InsanityNews />
   </div>
 </template>
 
