@@ -1,8 +1,11 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 import Unocss from 'unocss/vite'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+
+  ssr: false,
+
   runtimeConfig: {
     apiSecret: 'noMuciBcibFRCQDOfiiSdMb4tGQBVxELAzrP7hRBw5a9FSj6HI2rJdK9pADZKdRm', // can be overridden by NUXT_API_SECRET environment variable
     public: {
