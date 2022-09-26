@@ -29,17 +29,21 @@ onClickOutside(target, (e) => {
       :class="[isActive ? 'left-0' : '']"
     >
       <!-- Navigation Links -->
-      <NuxtLink to="/" @click="showMenu" class="insanity-nav-item-link"> HOME </NuxtLink>
-      <NuxtLink to="" @click="showMenu" class="insanity-nav-item-link"
+      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link">
+        HOME
+      </NuxtLink>
+      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link"
         >ITEM MALL</NuxtLink
       >
-      <NuxtLink to="/downloads" @click="showMenu" class="insanity-nav-item-link"
+      <NuxtLink to="/insanity/downloads" @click="showMenu" class="insanity-nav-item-link"
         >DOWNLAODS</NuxtLink
       >
-      <NuxtLink to="/rankings" @click="showMenu" class="insanity-nav-item-link"
+      <NuxtLink to="/insanity/rankings" @click="showMenu" class="insanity-nav-item-link"
         >RANKINGS</NuxtLink
       >
-      <NuxtLink to="" @click="showMenu" class="insanity-nav-item-link">FORUM</NuxtLink>
+      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link"
+        >FORUM</NuxtLink
+      >
     </nav>
 
     <!-- Mobile button -->
