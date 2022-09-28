@@ -31,7 +31,7 @@ onClickOutside(target, (e) => {
       <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link">
         HOME
       </NuxtLink>
-      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link">
+      <NuxtLink to="/insanity/#" @click="showMenu" class="insanity-nav-item-link">
         ITEM MALL</NuxtLink
       >
       <NuxtLink to="/insanity/downloads" @click="showMenu" class="insanity-nav-item-link"
@@ -40,7 +40,7 @@ onClickOutside(target, (e) => {
       <NuxtLink to="/insanity/rankings" @click="showMenu" class="insanity-nav-item-link"
         >RANKINGS</NuxtLink
       >
-      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link"
+      <NuxtLink to="/insanity/#" @click="showMenu" class="insanity-nav-item-link"
         >FORUM</NuxtLink
       >
     </nav>
