@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-14 flex bg-base_dark/50 fixed top-0 right-0 px-4 lg:px-16 z-20">
+  <header class="w-full h-14 flex bg-base_dark/95 fixed top-0 right-0 px-4 lg:px-16 z-20">
     <div class="flex justify-center items-center w-full">
       <!-- Logo  -->
       <InsanityTheNavbar />

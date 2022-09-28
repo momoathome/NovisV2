@@ -26,14 +26,13 @@ onClickOutside(target, (e) => {
   <div class="flex-grow-2">
     <nav
       class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-center me-3% w-full h-auto p-block-0 )"
-      :class="[isActive ? 'left-0' : '']"
-    >
+      :class="[isActive ? 'left-0' : '']">
       <!-- Navigation Links -->
       <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link">
         HOME
       </NuxtLink>
-      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link"
-        >ITEM MALL</NuxtLink
+      <NuxtLink to="/insanity" @click="showMenu" class="insanity-nav-item-link">
+        ITEM MALL</NuxtLink
       >
       <NuxtLink to="/insanity/downloads" @click="showMenu" class="insanity-nav-item-link"
         >DOWNLAODS</NuxtLink
