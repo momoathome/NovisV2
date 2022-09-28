@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       // https://github.com/antfu/unocss
       // see unocss.config.ts for config
       // see nuxt.config.ts "css" for css loading
-      Unocss(),
+      Unocss({'configFile': 'unocss.config.ts'}),
     ],
   },
 })

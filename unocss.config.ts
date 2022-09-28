@@ -8,8 +8,8 @@ import {
   // transformerDirectives,
   transformerVariantGroup
 } from 'unocss'
+  /* @unocss-include */
 
-/* @unocss-include */
 
 export default defineConfig({
   shortcuts: [
@@ -23,7 +23,7 @@ export default defineConfig({
 
 
     // insanity
-    ['insanity-nav-item-link', 'no-underline transition transition-duration-200 py-2 px-4 w-max text-xs uppercase text-base hover:text-primary lg:( px-8 )'],
+    ['insanity-nav-item-link', 'relative no-underline transition transition-duration-200 py-2 px-4 w-max text-xs uppercase text-base hover:( text-primary bg-base_dark ) lg:( py-4.75 px-8 )'],
 
   ],
   presets: [

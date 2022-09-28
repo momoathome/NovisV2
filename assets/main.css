@@ -40,12 +40,14 @@
   font-size: 16px;
   --base: 245, 245, 245;
   --base-light: 60, 60, 60;
-  --base-dark: 0, 0, 0;
-  --primary: 56, 189, 248;
+  --base-dark: 27, 31, 34;
+  --primary: 255, 213, 128;
   --primary-light: 156, 163, 175;
-  --secondary: 56, 237, 248;
+  --secondary: 56, 189, 248;
   --tertiary: 92, 157, 220;
   --accent: 247, 165, 76;
+  --nav-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 256 256' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m238.8 113.9l-96.7-96.7a19.8 19.8 0 0 0-28.2 0l-96.7 96.7a19.8 19.8 0 0 0 0 28.2l96.7 96.7a19.8 19.8 0 0 0 28.2 0l96.7-96.7a19.8 19.8 0 0 0 0-28.2ZM128 219l-91-91l91-91l91 91Z'/%3E%3C/svg%3E")
+    no-repeat;
 }
 
 :root[theme='update'] {
@@ -109,8 +111,39 @@ ul li::before {
   -webkit-mask-size: 100% 100%;
   background-color: rgb(var(--tertiary));
   margin-inline-end: 1rem;
-  padding-inline-end: 2ch; /* size off the arrow */
+  padding-inline-end: 2ch; /* size off the icon */
   padding-block: 1ch;
+}
+
+.insanity-nav-item-link:not(:first-of-type)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  background-image: var(--nav-icon);
+  mask: var(--nav-icon) no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask: var(--nav-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  background-color: rgb(var(--base), 60%);
+  padding-inline-end: 2ch; /* size off the icon */
+  padding-block: 1ch;
+}
+.insanity-nav-item-link:not(:first-of-type)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -14.75px;
+  transform: translateY(-50%);
+  background-image: var(--nav-icon);
+  mask: var(--nav-icon) no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask: var(--nav-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  background-color: rgb(var(--base), 5%);
+  padding-inline-end: 4ch; /* size off the icon */
+  padding-block: 2ch;
 }
 
 .page-enter-from,
