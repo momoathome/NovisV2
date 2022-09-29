@@ -2,7 +2,7 @@
   <NuxtLink
     :to="to"
     :target="target"
-    class="cursor-pointer no-underline font-sans uppercase font-bold inline-block px-3.5 py-2 rounded-2xl bg-secondary text-white shadow-black/20 shadow-lg border-none transition-all transition-duration-300 hover:bg-secondary/70">
+    class="btn cursor-pointer no-underline font-sans uppercase inline-block px-6 py-2 rounded-2xl text-white text-sm shadow-black/20 shadow-lg border-none transition-all transition-duration-300 hover:bg-secondary/70">
     <slot />
   </NuxtLink>
 </template>
@@ -18,4 +18,8 @@ defineProps({
 })
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.btn {
+  background: var(--background-gradient);
+}
+</style>

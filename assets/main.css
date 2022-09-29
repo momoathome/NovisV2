@@ -46,6 +46,11 @@
   --secondary: 56, 189, 248;
   --tertiary: 92, 157, 220;
   --accent: 247, 165, 76;
+  --background-gradient: linear-gradient(
+    180deg,
+    rgb(123, 81, 201) 10%,
+    rgba(var(--secondary), 1) 100%
+  );
   --nav-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 256 256' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m238.8 113.9l-96.7-96.7a19.8 19.8 0 0 0-28.2 0l-96.7 96.7a19.8 19.8 0 0 0 0 28.2l96.7 96.7a19.8 19.8 0 0 0 28.2 0l96.7-96.7a19.8 19.8 0 0 0 0-28.2ZM128 219l-91-91l91-91l91 91Z'/%3E%3C/svg%3E")
     no-repeat;
 }
@@ -115,7 +120,7 @@ ul li::before {
   padding-block: 1ch;
 }
 
-.insanity-nav-item-link:not(:first-of-type)::before {
+.insanity-nav-item-link:not(:first-child)::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -130,7 +135,7 @@ ul li::before {
   padding-inline-end: 2ch; /* size off the icon */
   padding-block: 1ch;
 }
-.insanity-nav-item-link:not(:first-of-type)::after {
+.insanity-nav-item-link:not(:first-child)::after {
   content: '';
   position: absolute;
   top: 50%;
