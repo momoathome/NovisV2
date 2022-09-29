@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2.5">
-    <insanityFaqAccordionItem v-for="(item, index) in faq" :key="index" :faq="item" />
+    <InsanityFaqAccordionItem v-for="(item, index) in faq" :key="index" :faq="item" />
   </div>
 </template>
 

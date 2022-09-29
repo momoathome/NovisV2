@@ -6,7 +6,7 @@
     </div>
 
     <div class="container max-w-768px m-auto p-block-20 px-8 lg:px-0">
-      <insanityFaqAccordion :faq="faq" />
+      <InsanityFaqAccordion :faq="faq" />
     </div>
   </div>
 </template>

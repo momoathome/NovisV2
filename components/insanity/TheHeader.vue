@@ -12,7 +12,7 @@
             <div i-heroicons-lock-closed-solid class="bg-primary rotate--45 text-sm" />
           </div>
           <span
-            class="uppercase font-sans text-white text-sm group-hover:text-primary transition transition-duration-200">
+            class="uppercase font-sans text-white text-sm group-hover:text-primary transition transition-duration-200 whitespace-nowrap">
             Sign Up
           </span>
         </div>

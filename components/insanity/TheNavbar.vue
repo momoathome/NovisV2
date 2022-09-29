@@ -23,7 +23,7 @@ onClickOutside(target, (e) => {
 </script>
 
 <template>
-  <div class="flex-grow-2">
+  <div class="flex-grow-2 ms-18%">
     <nav
       class="fixed bg-base_dark/95 left--100% top-14 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-center me-3% w-full h-auto p-block-0 )"
       :class="[isActive ? 'left-0' : '']">
@@ -63,12 +63,12 @@ onClickOutside(target, (e) => {
           @click="showDDM">
           <!-- prettier-ignore -->
           <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
-            <NuxtLink to="/faq" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> FAQ </NuxtLink>
-            <NuxtLink to="/guides" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Guides </NuxtLink>
-            <NuxtLink to="/tickets" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Ticket support </NuxtLink>
-            <NuxtLink to="/ipoints" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> IPoints </NuxtLink>
-            <NuxtLink to="/team" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Team </NuxtLink>
-            <NuxtLink to="/rules" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Rules </NuxtLink>
+            <NuxtLink to="/insanity/faq" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> FAQ </NuxtLink>
+            <NuxtLink to="/insanity/guides" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Guides </NuxtLink>
+            <NuxtLink to="/insanity/tickets" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Ticket support </NuxtLink>
+            <NuxtLink to="/insanity/#" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> IPoints </NuxtLink>
+            <NuxtLink to="/insanity/team" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Team </NuxtLink>
+            <NuxtLink to="/insanity/rules" @click="showMenu(); showDDM()" class="insanity-dropDown-item"> Rules </NuxtLink>
           </div>
         </div>
       </div>
