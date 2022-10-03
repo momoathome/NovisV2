@@ -18,7 +18,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   --base: 31, 29, 51;
-  --base-light: 41, 41, 69;
+  --base-light: 41, 41, 69; /* text */
   --base-dark: 24, 23, 39;
   --primary: 61, 208, 216;
   --primary-light: 194, 212, 248;
@@ -39,7 +39,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   --base: 245, 245, 245;
-  --base-light: 60, 60, 60;
+  --base-light: 60, 60, 60; /* text */
   --base-dark: 27, 31, 34;
   --primary: 255, 213, 128;
   --primary-light: 156, 163, 175;

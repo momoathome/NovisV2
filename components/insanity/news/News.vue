@@ -33,75 +33,9 @@
         </div>
 
         <div class="grid gap-4">
-          <div class="bg-base rounded-10px shadow-black/20 shadow-md flex">
-            <div class="max-h-152px">
-              <img
-                src="https://source.unsplash.com/random"
-                alt=""
-                class="w-150px h-full object-cover rounded-10px" />
-            </div>
-            <div class="p-4">
-              <div class="flex">
-                <div i-tabler-clock class="me-1" />
-                <p class="uppercase font-bold font-sans text-xs m-0">
-                  26.09.2022 at 21:00
-                </p>
-              </div>
-              <div>
-                <h3 class="text-base_light uppercase m-block-2">Headline</h3>
-                <p class="font-sans text-sm leading-5.5 max-w-50ch">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora
-                  rem corrupti inventore aperiam eos
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-base rounded-10px shadow-black/20 shadow-md flex">
-            <div class="max-h-152px">
-              <img
-                src="https://source.unsplash.com/random"
-                alt=""
-                class="w-150px h-full object-cover rounded-10px" />
-            </div>
-            <div class="p-4">
-              <div class="flex">
-                <div i-tabler-clock class="me-1" />
-                <p class="uppercase font-bold font-sans text-xs m-0">
-                  26.09.2022 at 21:00
-                </p>
-              </div>
-              <div>
-                <h3 class="text-base_light uppercase m-block-2">Headline</h3>
-                <p class="font-sans text-sm leading-5.5 max-w-50ch">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora
-                  rem corrupti inventore aperiam eos
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-base rounded-10px shadow-black/20 shadow-md flex">
-            <div class="max-h-152px">
-              <img
-                src="https://source.unsplash.com/random"
-                alt=""
-                class="w-150px h-full object-cover rounded-10px" />
-            </div>
-            <div class="p-4">
-              <div class="flex">
-                <div i-tabler-clock class="me-1" />
-                <p class="uppercase font-bold font-sans text-xs m-0">
-                  26.09.2022 at 21:00
-                </p>
-              </div>
-              <div>
-                <h3 class="text-base_light uppercase m-block-2">Headline</h3>
-                <p class="font-sans text-sm leading-5.5 max-w-50ch">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora
-                  rem corrupti inventore aperiam eos
-                </p>
-              </div>
-            </div>
-          </div>
+          <InsanityNewsItem />
+          <InsanityNewsItem />
+          <InsanityNewsItem />
         </div>
       </div>
     </div>

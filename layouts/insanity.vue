@@ -10,6 +10,7 @@
     </main>
 
     <!-- <TheFooter /> -->
+    <InsanityTheFooter />
   </div>
 </template>
 
