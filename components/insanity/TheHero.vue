@@ -3,10 +3,9 @@
     <img
       src="/img/insanity-background.webp"
       alt=""
-      class="absolute top-0 left-0 w-full h-full"
-    />
+      class="absolute top-0 left-0 w-full h-full" />
     <div class="flex flex-col z-2 mt-30">
-      <img src="/img/insanity_logo.png" alt="" />
+      <img src="/img/insanity_logo.png" alt="" class="w-600px h-140px" />
     </div>
   </div>
 </template>

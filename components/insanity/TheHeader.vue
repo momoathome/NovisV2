@@ -1,6 +1,6 @@
 <template>
   <header class="w-full h-14 flex bg-base_dark/95 fixed top-0 right-0 px-4 lg:px-16 z-20">
-    <div class="flex justify-center items-center w-full">
+    <div class="flex lg:justify-center items-center w-full">
       <!-- Logo  -->
       <InsanityTheNavbar />
 
@@ -23,6 +23,8 @@
         <DiscordButton class="text-xl" :open="isOpen" @click="modal.show()" />
         <!-- Darkmode Component - Button -->
         <DarkButton class="text-xl" />
+        <!-- Multilanguage -->
+        <div i-twemoji-flag-united-kingdom class="icon-btn text-xl" />
       </div>
     </div>
 
