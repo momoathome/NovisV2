@@ -2,6 +2,7 @@
   <div>
     <InsanityTheHero />
     <InsanityNews />
+    <InsanityTheDivider />
   </div>
 </template>
 
