@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full h-20 flex bg-base_dark px-4 lg:px-16">
+  <footer class="w-full h-20 flex bg-base_dark mt-24 px-4 lg:px-16">
     <div class="flex justify-center items-center w-full text-sm">
       <div class="flex items-center gap-1 me-10">
         Copyright

@@ -25,6 +25,7 @@ export default defineConfig({
     // insanity
     ['insanity-nav-item-link', 'relative no-underline transition transition-duration-200 py-2 px-4 w-max text-xs uppercase text-base hover:( text-primary bg-base_dark ) lg:( py-4.75 px-8 )'],
     ['insanity-dropDown-item', 'insanity-nav-item-link block w-full lg:(!px-8 !py-2 hover:bg-base_dark )'],
+    ['insanity-newsSliderNavigation', 'cursor-pointer z-2 absolute top-50% translate-y--50% rounded-full w-60px h-60px p-1 hover:( bg-base_dark/5 )'],
 
   ],
   presets: [

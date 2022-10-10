@@ -3,6 +3,7 @@
     <InsanityTheHero />
     <InsanityNews />
     <InsanityTheDivider />
+    <InsanityFeaturesSlider />
   </div>
 </template>
 
