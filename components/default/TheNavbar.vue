@@ -26,13 +26,13 @@ onClickOutside(target, (e) => {
   <div class="flex-grow-2">
     <nav
       class="fixed bg-base/85 left--100% top-28 flex-col w-full h-screen py-2 px-6 z-100 transition-left flex md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-center me-3% w-full h-auto p-block-0 )"
-      :class="[isActive ? 'left-0' : '']"
-    >
+      :class="[isActive ? 'left-0' : '']">
       <!-- Navigation Links -->
       <NuxtLink to="/" @click="showMenu" class="nav-item-link"> News </NuxtLink>
       <!-- prettier-ignore -->
       <NuxtLink to="/downloads" @click="showMenu" class="nav-item-link">Downloads</NuxtLink>
       <NuxtLink to="/rankings" @click="showMenu" class="nav-item-link">Rankings</NuxtLink>
+      <NuxtLink to="/shop" @click="showMenu" class="nav-item-link">Shop</NuxtLink>
 
       <div class="nav-item-link relative cursor-pointer" @click="showDDM()" ref="target">
         <!-- Nav Item to trigger Dropdown Menu -->
@@ -41,16 +41,14 @@ onClickOutside(target, (e) => {
           <div
             i-ph-caret-down-fill
             class="ms-1 align-middle transition-transform transition-duration-300"
-            :class="[isDDMDown ? 'rotate-180' : '']"
-          />
+            :class="[isDDMDown ? 'rotate-180' : '']" />
         </div>
 
         <!-- Dropdown menu -->
         <div
           class="transition transition-duration-300 lg:( origin-top-right absolute top-74px right-16px w-40 bg-base/85 z-20 rounded-b-md shadow-black/20 shadow-md )"
           :class="[isDDMDown ? 'opacity-100 ' : 'opacity-0']"
-          @click="showDDM"
-        >
+          @click="showDDM">
           <!-- prettier-ignore -->
           <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
             <NuxtLink to="/features" @click="showMenu(); showDDM()" class="dropDown-item"> Features </NuxtLink>
