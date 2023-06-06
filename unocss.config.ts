@@ -6,10 +6,10 @@ import {
   presetWebFonts,
   // presetMini,
   // transformerDirectives,
-  transformerVariantGroup
+  transformerVariantGroup,
 } from 'unocss'
-  /* @unocss-include */
 
+/* @unocss-include */
 
 export default defineConfig({
   shortcuts: [
@@ -21,7 +21,6 @@ export default defineConfig({
     ['counter-btn', 'px-4 py-2 font-medium text-sm tracking-wide text-white capitalize cursor-pointer transition-colors transform bg-primary rounded-md border-none hover:bg-primary_light focus:( outline-none ring ring-base dark:ring-base_light ring-opacity-80 )'],
     ['template-DropDown-Item', 'no-underline cursor-pointer block bg-white transition transition-duration-200 w-max text-sm text-dark-800 font-serif font-bold py-1 px-4 w-full text-left lg:hover:bg-dark-50/15 '],
 
-
     // insanity
     ['insanity-nav-item-link', 'relative no-underline transition transition-duration-200 py-2 px-4 w-max text-xs uppercase text-base hover:( text-primary bg-base_dark ) lg:( py-4.75 px-8 )'],
     ['insanity-dropDown-item', 'insanity-nav-item-link block w-full lg:(!px-8 !py-2 hover:bg-base_dark )'],
@@ -32,11 +31,12 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
     presetIcons({
+      scale: 1.2,
       warn: true,
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'middle',
-      }
+      },
     }),
     presetWebFonts({
       provider: 'none', // default provider
@@ -56,18 +56,16 @@ export default defineConfig({
   ],
   preflights: [],
 
-
-
   rules: [
-    [/^text-(.*)$/, ([, c], { theme }) => {
-      // @ts-ignore
-      if (theme.colors[c]) {
-      // @ts-ignore prettier-ignore
-        return { color: theme.colors[c] }
-      }
-    }],
+    [
+      /^text-(.*)$/,
+      ([, c], { theme }) => {
+        if (theme.colors[c])
+          return { color: theme.colors[c] }
+      },
+    ],
   ],
-    theme: {
+  theme: {
     colors: {
       /* base: '#0C0F18', */
       base: 'rgb(var(--base))',
@@ -78,7 +76,7 @@ export default defineConfig({
       primary_dark: 'rgb(var(--primary-dark))',
       secondary: 'rgb(var(--secondary))',
       tertiary: 'rgb(var(--tertiary))',
-      accent: 'rgb(var(--accent))'
+      accent: 'rgb(var(--accent))',
     },
   },
 
