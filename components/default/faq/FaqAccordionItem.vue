@@ -1,27 +1,3 @@
-<template>
-  <button
-    type="button"
-    class="accordion relative z-0 bg-base_light text-white uppercase cursor-pointer p-4 w-full border-none font-sans font-bold text-sm transition-all transition-duration-300"
-    @click="openItem"
-    :class="isActive ? 'rounded-t-10px open' : 'rounded-10px'"
-  >
-    {{ faq.question }}
-    <div class="float-right">
-      <span
-        class="z-0 !border-none"
-        :class="
-          isActive ? 'i-fa6-solid-minus bg-white ' : 'i-fa6-solid-plus bg-secondary '
-        "
-      ></span>
-    </div>
-  </button>
-  <div
-    class="bg-base_dark px-4 max-h-0 mt--2 overflow-hidden transition-max-height transition-duration-200 transition-ease-out rounded-b-10px"
-    ref="target"
-    v-html="faq.answer"
-  ></div>
-</template>
-
 <script setup lang="ts">
 defineProps({
   faq: Object,
@@ -30,16 +6,40 @@ defineProps({
 const isActive = ref(false)
 const target = ref(null)
 
-const openItem = () => {
+function openItem() {
   isActive.value = !isActive.value
 
   if (target.value.style.maxHeight) {
     target.value.style.maxHeight = null
     return
   }
-  target.value.style.maxHeight = target.value.scrollHeight + 'px'
+  target.value.style.maxHeight = `${target.value.scrollHeight}px`
 }
 </script>
+
+<template>
+  <button
+    type="button"
+    class="bg-base_light border-none cursor-pointer font-sans font-bold text-white text-sm w-full p-4 transition-all z-0 transition-duration-300 accordion relative uppercase"
+    :class="isActive ? 'rounded-t-10px open' : 'rounded-10px'"
+    @click="openItem"
+  >
+    {{ faq.question }}
+    <div class="float-right">
+      <span
+        class="z-0 !border-none"
+        :class="
+          isActive ? 'i-fa6-solid-minus bg-white ' : 'i-fa6-solid-plus bg-secondary '
+        "
+      />
+    </div>
+  </button>
+  <div
+    ref="target"
+    class="bg-base_dark rounded-b-10px mt--2 max-h-0 px-4 transition-max-height transition-ease-out transition-duration-200 overflow-hidden"
+    v-html="faq.answer"
+  />
+</template>
 
 <style scoped lang="scss">
 .accordion:hover {

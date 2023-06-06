@@ -1,13 +1,3 @@
-<template>
-  <NuxtLink
-    :to="to"
-    :target="target"
-    class="btn cursor-pointer no-underline font-sans tracking-1px uppercase font-bold relative inline-block z-0 px-4 py-2 text-xs whitespace-nowrap md:( px-8 py-3 text-sm ) xl:( px-12 py-4 ) rounded-lg shadow-black/20 shadow-lg border-none bg-transparent text-white transition-all transition-duration-300 before:( content-empty absolute z--1 inset-0 px-2px py-2px transition-all rounded-lg )"
-  >
-    <slot />
-  </NuxtLink>
-</template>
-
 <script setup lang="ts">
 defineProps({
   to: {
@@ -18,6 +8,16 @@ defineProps({
   },
 })
 </script>
+
+<template>
+  <NuxtLink
+    :to="to"
+    :target="target"
+    class="bg-transparent border-none rounded-lg cursor-pointer font-sans font-bold shadow-lg text-xs text-white py-2 px-4 transition-all shadow-black/20 tracking-1px z-0 transition-duration-300 btn no-underline uppercase relative inline-block whitespace-nowrap md:( px-8 py-3 text-sm ) xl:( px-12 py-4 ) before:( content-empty absolute z--1 inset-0 px-2px py-2px transition-all rounded-lg ) "
+  >
+    <slot />
+  </NuxtLink>
+</template>
 
 <style scoped lang="scss">
 .btn:hover {

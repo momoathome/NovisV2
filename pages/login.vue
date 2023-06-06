@@ -1,9 +1,11 @@
+<script setup lang="ts"></script>
+
 <template>
   <div>
-    <h1 class="text-3xl text-center">Login</h1>
+    <h1 class="text-center text-3xl">
+      Login
+    </h1>
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped></style>

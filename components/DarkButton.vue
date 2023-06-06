@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import {useIsdark} from '~/stores/isdark'
+import { useIsdark } from '~/stores/isdark'
+
 const dark = useIsdark()
 
 const isDark = useDark()
@@ -14,10 +15,10 @@ const prefferdDark = usePreferredDark()
 
 <template>
   <button
-    @click="toggleDark()"
-    @click.prevent="dark.change"
     class="icon-btn"
     dark:i-carbon-moon
     i-carbon-sun
+    @click="toggleDark()"
+    @click.prevent="dark.change"
   />
 </template>

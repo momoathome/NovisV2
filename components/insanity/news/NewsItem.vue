@@ -1,36 +1,48 @@
+<script setup lang="ts">
+defineProps({
+  newsItem: Object,
+})
+</script>
+
 <template>
   <!--   <div
-    class="newsItemContainer group max-w-25% px-2 flex flex-grow-0 basis-25% flex-shrink-0 flex-col justify-center text-center transition transition-duration-350 cursor-pointer"
+    class="cursor-pointer flex flex-col flex-grow-0 flex-shrink-0 text-center max-w-25% px-2 transition transition-duration-350 newsItemContainer group justify-center basis-25%"
   >
     <img
       :src="`/img/${newsItem.img}.webp`"
-      class="rounded-full w-min self-center transition transition-duration-350 border-2 border-transparent group-hover:border-primary shadow-black/15 shadow-sm"
+      class="border-transparent rounded-full border-2 shadow-sm w-min transition shadow-black/15 transition-duration-350 self-center group-hover:border-primary"
       alt=""
     />
     <h3
-      class="text-white text-2xl mt-6 mb-0 uppercase transition transition-duration-350 group-hover:text-primary"
+      class="mt-6 text-white mb-0 transition text-2xl transition-duration-350 uppercase group-hover:text-primary"
     >
       {{ newsItem.short_title }}
     </h3>
-    <p class="m-0 text-sm font-bold uppercase font-sans">{{ newsItem.date }}</p>
+    <p class="font-bold font-sans m-0 text-sm uppercase">{{ newsItem.date }}</p>
   </div> -->
 
   <div
-    class="newsItemContainer bg-base rounded-10px shadow-black/20 shadow-md flex cursor-pointer hover:( bg-base_light/15 ) transition transition-duration-200">
+    class="bg-base cursor-pointer flex rounded-10px shadow-md transition shadow-black/20 transition-duration-200 newsItemContainer hover:( bg-base_light/15 ) "
+  >
     <div class="max-h-152px">
       <img
         src="https://source.unsplash.com/random"
         alt=""
-        class="w-150px h-full object-cover rounded-10px" />
+        class="h-full object-cover rounded-10px w-150px"
+      >
     </div>
     <div class="p-4">
       <div class="flex">
         <div i-tabler-clock class="me-1" />
-        <p class="uppercase font-bold font-sans text-xs m-0">26.09.2022 at 21:00</p>
+        <p class="font-bold font-sans m-0 text-xs uppercase">
+          26.09.2022 at 21:00
+        </p>
       </div>
       <div>
-        <h3 class="text-base_light uppercase m-block-2">Headline</h3>
-        <p class="font-sans text-sm leading-5.5 max-w-50ch">
+        <h3 class="m-block-2 text-base_light uppercase">
+          Headline
+        </h3>
+        <p class="font-sans text-sm max-w-50ch leading-5.5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora rem
           corrupti inventore aperiam eos
         </p>
@@ -38,12 +50,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  newsItem: Object,
-})
-</script>
 
 <style lang="scss" scoped>
 .active.newsItemContainer {

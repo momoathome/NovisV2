@@ -1,12 +1,3 @@
-<template>
-  <NuxtLink
-    :to="to"
-    :target="target"
-    class="btn cursor-pointer no-underline font-sans uppercase inline-block px-6 py-2 rounded-2xl text-white text-sm shadow-black/20 shadow-lg border-none transition-all transition-duration-300 hover:bg-secondary/70">
-    <slot />
-  </NuxtLink>
-</template>
-
 <script setup lang="ts">
 defineProps({
   to: {
@@ -17,6 +8,16 @@ defineProps({
   },
 })
 </script>
+
+<template>
+  <NuxtLink
+    :to="to"
+    :target="target"
+    class="border-none cursor-pointer font-sans rounded-2xl shadow-lg text-white text-sm py-2 px-6 transition-all shadow-black/20 transition-duration-300 btn no-underline uppercase inline-block hover:bg-secondary/70"
+  >
+    <slot />
+  </NuxtLink>
+</template>
 
 <style scoped lang="scss">
 .btn {

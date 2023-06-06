@@ -1,7 +1,11 @@
 <script setup></script>
 
+<script setup>
+mode.value = 'insanity'
+</script>
+
 <template>
-  <div class="min-h-100vh flex flex-col text-primary_light">
+  <div class="flex flex-col text-primary_light min-h-100vh">
     <InsanityTheHeader />
     <TemplateChange />
 
@@ -13,7 +17,3 @@
     <InsanityTheFooter />
   </div>
 </template>
-
-<script setup>
-mode.value = 'insanity'
-</script>

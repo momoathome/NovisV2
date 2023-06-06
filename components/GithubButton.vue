@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps({
+  link: String,
+})
+</script>
+
 <template>
   <NuxtLink
     :to="link"
@@ -5,12 +11,5 @@
     target="_blank"
     class="icon-btn"
     i-carbon-logo-github
-  >
-  </NuxtLink>
+  />
 </template>
-
-<script setup lang="ts">
-defineProps({
-  link: String,
-})
-</script>

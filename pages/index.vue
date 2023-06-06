@@ -1,10 +1,10 @@
+<script setup></script>
+
 <template>
   <div>
-    <DefaultTheHero />
-    <DefaultNews />
+    <TheHero />
+    <News />
   </div>
 </template>
-
-<script setup></script>
 
 <style></style>

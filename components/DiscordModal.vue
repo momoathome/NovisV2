@@ -1,19 +1,3 @@
-<template>
-  <Transition name="fade">
-    <div class="h-full w-full fixed top-0 left-0 z-20 bg-black/50" v-show="open">
-      <!-- prettier-ignore -->
-      <transition name="drop-in">
-        <div 
-          class="shadow-black/20 shadow-md w-max fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 antialiased" 
-          v-show="open"
-        >
-          <iframe src="https://discord.com/widget?id=936744932629176392&theme=dark" width="460" height="540"></iframe>
-        </div>
-      </transition>
-    </div>
-  </Transition>
-</template>
-
 <script setup lang="ts">
 defineProps({
   open: {
@@ -22,6 +6,22 @@ defineProps({
   },
 })
 </script>
+
+<template>
+  <Transition name="fade">
+    <div v-show="open" class="h-full bg-black/50 w-full top-0 left-0 z-20 fixed">
+      <!-- prettier-ignore -->
+      <transition name="drop-in">
+        <div
+          v-show="open"
+          class="shadow-md w-max transform top-1/2 left-1/2 shadow-black/20 z-30 -translate-x-1/2 -translate-y-1/2 fixed antialiased"
+        >
+          <iframe src="https://discord.com/widget?id=936744932629176392&theme=dark" width="460" height="540" />
+        </div>
+      </transition>
+    </div>
+  </Transition>
+</template>
 
 <style scoped>
 .fade-enter-active,

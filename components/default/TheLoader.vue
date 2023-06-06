@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="wrapper">
     <svg
@@ -26,23 +28,21 @@
 
     <div class="loader">
       <div class="static">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div class="dot" />
+        <div class="dot" />
+        <div class="dot" />
+        <div class="dot" />
       </div>
       <div class="dots">
-        <div class="dot animated"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div class="dot animated" />
+        <div class="dot" />
+        <div class="dot" />
+        <div class="dot" />
+        <div class="dot" />
       </div>
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 $size: 5rem;

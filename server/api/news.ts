@@ -1,5 +1,5 @@
-import getApiData from "~~/composables/getApiData"
+import getApiData from '~~/composables/getApiData'
 
 export default defineEventHandler((event) => {
-    return getApiData('news')
+  return getApiData('news')
 })

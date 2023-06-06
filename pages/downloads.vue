@@ -1,5 +1,5 @@
 <template>
-  <div class="h-100vh w-full flex justify-center">
-    <DefaultDownloads />
+  <div class="flex h-100vh w-full justify-center">
+    <Downloads />
   </div>
 </template>

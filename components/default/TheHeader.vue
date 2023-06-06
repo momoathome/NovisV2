@@ -1,14 +1,35 @@
+<script setup lang="ts">
+import { useModal } from '~/stores/modal'
+
+/* Discord Modal */
+const modal = useModal() // modal store
+const isOpen = ref(false) // isModal open
+function toggleModal() {
+  isOpen.value = !isOpen.value
+}
+
+modal.$subscribe((mutation, state) => {
+  if (state.state === true && isOpen.value === false)
+    toggleModal()
+  else if (state.state === false && isOpen.value === true)
+    toggleModal()
+})
+</script>
+
 <template>
   <header
-    class="w-full h-28 flex bg-base/85 fixed top-0 right-0 px-4 lg:px-16 z-20 shadow-black/20 shadow-lg">
-    <div class="flex justify-between items-center w-full">
+    class="flex bg-base/85 h-28 shadow-lg w-full px-4 top-0 right-0 shadow-black/20 z-20 fixed lg:px-16"
+  >
+    <div class="flex w-full justify-between items-center">
       <!-- Logo  -->
-      <div class="text-3xl text-white font-semibold">NovisV2</div>
+      <div class="font-semibold text-white text-3xl">
+        NovisV2
+      </div>
 
-      <DefaultTheNavbar />
+      <TheNavbar />
 
-      <div class="flex items-center gap-3 lg:gap-6">
-        <DefaultPrimaryButton>Join us Now</DefaultPrimaryButton>
+      <div class="flex gap-3 items-center lg:gap-6">
+        <PrimaryButton>Join us Now</PrimaryButton>
 
         <!-- Account Panel -->
         <UserPanelButton class="text-lg" />
@@ -22,24 +43,5 @@
     <DiscordModal v-show="isOpen" :open="isOpen" @click="modal.hide" />
   </header>
 </template>
-
-<script setup lang="ts">
-import {useModal} from '~/stores/modal'
-
-/* Discord Modal */
-const modal = useModal() // modal store
-const isOpen = ref(false) // isModal open
-const toggleModal = () => {
-  isOpen.value = !isOpen.value
-}
-
-modal.$subscribe((mutation, state) => {
-  if (state.state === true && isOpen.value === false) {
-    toggleModal()
-  } else if (state.state === false && isOpen.value == true) {
-    toggleModal()
-  }
-})
-</script>
 
 <style scoped></style>

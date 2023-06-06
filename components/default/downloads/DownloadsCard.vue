@@ -1,27 +1,31 @@
-<template>
-  <div class="bg-base_light rounded-10px p-10 shadow-black/20 shadow-md">
-    <div class="flex justify-between">
-      <p class="text-primary uppercase font-bold font-sans text-sm m-0">
-        {{ data.host }}
-      </p>
-      <p class="uppercase font-bold text-sm m-0 tracking-1px">{{ data.date }}</p>
-    </div>
-    <div class="text-center">
-      <h2 class="text-white uppercase m-block-4 tracking-1px">{{ data.title }}</h2>
-      <p class="font-sans text-sm leading-6 m-auto max-w-35ch">
-        {{ data.content }}
-      </p>
-      <DefaultPrimaryButton class="mt-4" :to="data.link" :target="'_blank'">
-        Download
-      </DefaultPrimaryButton>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 defineProps({
   data: Object,
 })
 </script>
+
+<template>
+  <div class="bg-base_light rounded-10px shadow-md p-10 shadow-black/20">
+    <div class="flex justify-between">
+      <p class="font-bold font-sans m-0 text-primary text-sm uppercase">
+        {{ data.host }}
+      </p>
+      <p class="font-bold m-0 text-sm tracking-1px uppercase">
+        {{ data.date }}
+      </p>
+    </div>
+    <div class="text-center">
+      <h2 class="m-block-4 text-white tracking-1px uppercase">
+        {{ data.title }}
+      </h2>
+      <p class="font-sans m-auto text-sm max-w-35ch leading-6">
+        {{ data.content }}
+      </p>
+      <PrimaryButton class="mt-4" :to="data.link" target="_blank">
+        Download
+      </PrimaryButton>
+    </div>
+  </div>
+</template>
 
 <style scoped></style>
