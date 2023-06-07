@@ -1,3 +1,13 @@
+<script setup lang="ts">
+defineProps({
+  order: Number,
+})
+
+function isOdd(x: number) {
+  return !!(x & 1)
+}
+</script>
+
 <template>
   <div
     class="flex flex-col"
@@ -6,11 +16,13 @@
     <img
       src="https://via.placeholder.com/300x300/8E28DE/808080?Text=Digital.com"
       alt=""
-      class="shadow-black/20 shadow-md max-h-300px max-w-300px m-auto md:m-0"
+      class="m-auto shadow-md max-h-300px max-w-300px shadow-black/20 md:m-0"
       :class="isOdd(order) ? 'md:ms-10' : 'md:me-10'"
-    />
+    >
     <div>
-      <h2 class="text-white text-3xl flex md:mt-0">Feature Title</h2>
+      <h2 class="flex text-white text-3xl md:mt-0">
+        Feature Title
+      </h2>
       <p class="font-sans text-sm leading-6">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae veniam ipsum
         quas, quia quam, maiores, nostrum odio ducimus et aliquid corrupti culpa at ex.
@@ -29,15 +41,5 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  order: Number,
-})
-
-function isOdd(x: number) {
-  return x & 1 ? true : false
-}
-</script>
 
 <style scoped></style>

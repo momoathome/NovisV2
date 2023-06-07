@@ -24,7 +24,7 @@ onClickOutside(target, () => {
 <template>
   <div class="flex-grow-2">
     <nav
-      class="flex-col flex h-screen bg-base/85 w-full py-2 px-6 transition-left top-28 left--100% z-100 fixed md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-center me-3% w-full h-auto p-block-0 ) "
+      class="flex-col flex h-screen bg-base/85 w-full py-2 px-6 transition-left top-28 left--100% z-100 fixed md:( w-30% h-full ) lg:( static bg-transparent flex-row justify-end w-full h-auto p-block-0 ) "
       :class="[isActive ? 'left-0' : '']"
     >
       <!-- Navigation Links -->
