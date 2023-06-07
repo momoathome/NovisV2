@@ -12,8 +12,8 @@
         </p>
       </div>
 
-      <div class="container m-auto max-w-1024px p-block-20 px-8 lg:px-0">
-        <div class="flex flex-col gap-20">
+      <div class="container m-auto max-w-1024px p-block-24 px-8 lg:px-0">
+        <div class="flex flex-col gap-24">
           <FeaturesItem v-for="(feature, index) in 4" :key="index" :order="index" />
         </div>
       </div>

@@ -16,7 +16,7 @@ defineProps({
           v-show="open"
           class="shadow-md w-max transform top-1/2 left-1/2 shadow-black/20 z-30 -translate-x-1/2 -translate-y-1/2 fixed antialiased"
         >
-          <iframe src="https://discord.com/widget?id=936744932629176392&theme=dark" width="460" height="540" />
+          <iframe src="https://discord.com/widget?id=1062748088525131826&theme=dark" width="460" height="540" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
         </div>
       </transition>
     </div>

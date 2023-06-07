@@ -35,11 +35,8 @@ onClickOutside(target, () => {
       <NuxtLink to="/downloads" class="nav-item-link" @click="showMenu">
         Downloads
       </NuxtLink>
-      <NuxtLink to="/rankings" class="nav-item-link" @click="showMenu">
-        Rankings
-      </NuxtLink>
-      <NuxtLink to="/shop" class="nav-item-link" @click="showMenu">
-        Shop
+      <NuxtLink to="/features" class="nav-item-link" @click="showMenu">
+        Features
       </NuxtLink>
 
       <div ref="target" class="cursor-pointer nav-item-link relative" @click="showDDM()">
@@ -61,8 +58,8 @@ onClickOutside(target, () => {
         >
           <!-- prettier-ignore -->
           <div class="py-2" :class="[isDDMDown ? 'block' : 'hidden']">
-            <NuxtLink to="/features" class="dropDown-item" @click="showMenu(); showDDM()">
-              Features
+            <NuxtLink to="/rankings" class="dropDown-item" @click="showMenu(); showDDM()">
+              Rankings
             </NuxtLink>
             <NuxtLink to="/guides" class="dropDown-item" @click="showMenu(); showDDM()">
               Guides
@@ -79,6 +76,10 @@ onClickOutside(target, () => {
           </div>
         </div>
       </div>
+
+      <NuxtLink to="/shop" class="nav-item-link" @click="showMenu">
+        Shop
+      </NuxtLink>
     </nav>
 
     <!-- Mobile button -->

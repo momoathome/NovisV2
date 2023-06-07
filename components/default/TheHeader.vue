@@ -23,7 +23,7 @@ modal.$subscribe((mutation, state) => {
     <div class="flex w-full justify-between items-center">
       <!-- Logo  -->
       <div class="font-semibold text-white text-3xl">
-        NovisV2
+        NovisCMS V2
       </div>
 
       <TheNavbar />
